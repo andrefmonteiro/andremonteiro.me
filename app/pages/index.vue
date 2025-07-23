@@ -1,7 +1,10 @@
 <template>
 	<div>
-		<p class="text-center bg-slate-200">
-			Home page
+		<h1>
+			Home H1
+		</h1>
+		<p>
+			paragraph
 		</p>
 	</div>
 </template>

@@ -1,0 +1,12 @@
+body {
+	@apply bg-red-400
+}
+
+h1 {
+	@apply text-3xl;
+	font-size: 60px;
+}
+
+p {
+	@apply underline
+}
