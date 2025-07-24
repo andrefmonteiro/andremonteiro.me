@@ -1,10 +1,24 @@
 <template>
-	<div>
-		<h1>
-			Home H1
-		</h1>
+	<div class="mt-10 ml-10">
 		<p>
-			paragraph
+			This is the <a
+				href="/"
+				class="text-brand-green"
+			>home</a> page
+		</p>
+		<br>
+		<p>
+			This is the <a
+				href="/"
+				class="text-brand-peach"
+			>home</a> page
+		</p>
+		<br>
+		<p>
+			This is the <a
+				href="/"
+				class="text-brand-purple"
+			>home</a> page
 		</p>
 	</div>
 </template>

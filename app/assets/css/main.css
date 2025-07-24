@@ -1,14 +1,22 @@
 @import "tailwindcss";
 
-body {
-	@apply bg-red-400
+@theme {
+	--color-brand-black: oklch(0.1784 0.0273 164.26);
+	--color-brand-white: oklch(0.8928 0.0152 164.69);
+	--color-brand-green: oklch(0.6873 0.0401 185.84);
+	--color-brand-peach: oklch(0.7383 0.0306 17.87);
+	--color-brand-purple: oklch(0.7349 0.0396 307.86);
 }
 
-h1 {
-	font-size: 60px;
-	@apply text-3xl;
+body {
+	font-size: 18px;
+	@apply bg-brand-black text-lg/10;
 }
 
 p {
-	@apply underline
+	@apply text-brand-white
+}
+
+a {
+	@apply underline decoration-2
 }
