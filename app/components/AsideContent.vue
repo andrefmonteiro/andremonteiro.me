@@ -15,7 +15,7 @@
 					<div class="flex flex-col-reverse md:flex-row text-sm py-1 items-center">
 						<div class="md:relative rounded-full md:mr-2 md:left-[1px] w-[4px] h-[4px] mt-1 md:mt-0 transition-transform scale-125 bg-accent-green" />
 						<NuxtLink
-							to="/about"
+							to="/"
 							class="transition-opacity hover:opacity-60 no-underline"
 						>About</NuxtLink>
 					</div>

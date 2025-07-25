@@ -22,3 +22,7 @@ body {
 a {
 	@apply underline decoration-3
 }
+
+aside a {
+	@apply no-underline
+}
