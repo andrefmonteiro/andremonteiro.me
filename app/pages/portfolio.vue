@@ -1,5 +1,7 @@
 <template>
 	<div>
-		Portfolio
+		<p>
+			Portfolio
+		</p>
 	</div>
 </template>

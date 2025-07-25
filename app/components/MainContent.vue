@@ -1,10 +1,13 @@
 <template>
 	<div>
 		MainContent
+		<h1 class="hidden md:block uppercase">
+			<NuxtLink to="/">André Monteiro</NuxtLink>
+		</h1>
 		<!--
-			- Name (hidden on mobile)
 			- PageDetails (conditionally rendered)
 			- MainContent
 			-->
+		<NuxtPage />
 	</div>
 </template>

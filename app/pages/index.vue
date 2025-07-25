@@ -1,5 +1,5 @@
 <template>
-	<div class="mt-10 ml-10">
+	<div>
 		<p class="bg-surface-muted">
 			This is the <a
 				href="/"
