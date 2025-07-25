@@ -10,24 +10,24 @@
 				</h1>
 			</div>
 
-			<nav class="flex flex-row md:flex-col items-start relative md:top-[-7px] px-4 md:px-0 pb-4 md:pb-0 md:overflow-auto scroll-pr-6 md:relative md:left-[-6px]">
+			<nav class="flex flex-row md:flex-col items-start relative px-4 md:px-0 pb-4 md:pb-0 md:relative md:left-[-8px]">
 				<div class="flex flex-row md:flex-col space-x-4 md:space-x-0 pr-10">
 					<div class="flex flex-col-reverse md:flex-row text-sm py-1 items-center">
-						<div class="md:relative rounded-full md:mr-2 md:left-[1px] w-[4px] h-[4px] mt-1 md:mt-0 transition-transform scale-125 bg-accent-green" />
+						<div class="md:relative rounded-full md:mr-2 w-[4px] h-[4px] mt-1 md:mt- transition-transform scale-125 bg-accent-green" />
 						<NuxtLink
 							to="/"
 							class="transition-opacity hover:opacity-60 no-underline"
 						>About</NuxtLink>
 					</div>
 					<div class="flex flex-col-reverse md:flex-row text-sm py-1 items-center">
-						<div class="md:relative rounded-full md:mr-2 md:left-[1px] w-[4px] h-[4px] mt-1 md:mt-0 transition-transform scale-125 bg-accent-green" />
+						<div class="md:relative rounded-full md:mr-2 w-[4px] h-[4px] mt-1 md:mt-0 transition-transform scale-125 bg-accent-green" />
 						<NuxtLink
 							to="/blog"
 							class="transition-opacity hover:opacity-60 no-underline"
 						>Blog</NuxtLink>
 					</div>
 					<div class="flex flex-col-reverse md:flex-row text-sm py-1 items-center">
-						<div class="md:relative rounded-full md:mr-2 md:left-[1px] w-[4px] h-[4px] mt-1 md:mt-0 transition-transform scale-125 bg-accent-green" />
+						<div class="md:relative rounded-full md:mr-2 w-[4px] h-[4px] mt-1 md:mt-0 transition-transform scale-125 bg-accent-green" />
 						<NuxtLink
 							to="/portfolio"
 							class="transition-opacity hover:opacity-60 no-underline"
