@@ -1,7 +1,7 @@
 <template>
 	<main>
 		<!-- Desktop heading -->
-		<h1 class="hidden md:block uppercase mb-8">
+		<h1 class="hidden md:block uppercase md:h-44">
 			<NuxtLink to="/">André Monteiro</NuxtLink>
 		</h1>
 

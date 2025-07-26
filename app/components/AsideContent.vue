@@ -1,6 +1,6 @@
 <template>
-	<aside class="md:sticky md:top-32">
-		<div class="flex flex-col mb-4 space-y-8 md:mb-20">
+	<aside class="md:sticky md:top-24">
+		<div class="flex flex-col mb-4 space-y-8 md:mb-20 md:h-24">
 			<NuxtLink to="/">
 				<span class="flex items-center justify-center text-surface-default rounded-full bg-accent-green w-9 h-9">AM</span>
 			</NuxtLink>

@@ -6,7 +6,6 @@
 				class="text-accent-green"
 			>home</a> page
 		</p>
-		<br>
 		<p>
 			This is the <a
 				href="/"
