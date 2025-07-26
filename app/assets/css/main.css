@@ -4,13 +4,17 @@
 	--color-surface-default: oklch(0.171 0.0166 188.58);
 	--color-surface-muted: oklch(0.2421 0.0274 187.55);
 	
-	--color-text-primary: oklch(0.9254 0.0035 174.48);
+	--color-text-primary: oklch(0.849 0.0077 164.9);
 	--color-text-secondary: oklch(0.7698 0.0089 168.67);
 	--color-text-tertiary: oklch(0.6032 0.0094 168.56);
 	
 	--color-accent-green: oklch(0.6873 0.0401 185.84);
 	--color-accent-peach: oklch(0.7383 0.0306 17.87);
 	--color-accent-purple: oklch(0.7349 0.0396 307.86);
+}
+
+* {
+	@apply border border-blue-400
 }
 
 body {
@@ -23,6 +27,7 @@ a {
 	@apply underline decoration-3
 }
 
-aside a {
+aside a,
+h1 a {
 	@apply no-underline
 }

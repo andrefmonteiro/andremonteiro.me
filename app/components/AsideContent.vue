@@ -1,37 +1,43 @@
 <template>
-	<aside class="md:w-[200px] md:flex-shrink-0">
-		<div class="lg:sticky lg:top-0">
-			<div class="flex flex-col items-start mb-2 space-y-8 md:mb-10 md:flex-row ">
+	<aside class="md:w-[220px] md:flex-shrink-0">
+		<div class="lg:sticky lg:top-32">
+			<div class="flex flex-col mb-2 space-y-8 md:mb-20">
 				<NuxtLink to="/">
-					<span class="flex items-center justify-center text-white rounded-full bg-accent-green w-9 h-9 ">AM</span>
+					<span class="flex items-center justify-center text-surface-default rounded-full bg-accent-green w-9 h-9">AM</span>
 				</NuxtLink>
-				<h1 class="uppercase md:hidden">
+				<h1 class="md:hidden uppercase leading-none">
 					<NuxtLink to="/">André Monteiro</NuxtLink>
 				</h1>
 			</div>
 
-			<nav class="flex flex-row md:flex-col items-start relative md:top-[-7px] md:px-0 pb-4 md:pb-0 md:relative md:left-[-6px]">
-				<div class="flex flex-row pr-10 space-x-4 md:flex-col md:space-x-0">
-					<div class="flex flex-col-reverse items-center py-1 text-sm md:flex-row">
-						<div class="md:relative rounded-full md:mr-2 md:left-[1px] w-[4px] h-[4px] mt-1 md:mt-0 transition-transform scale-125 bg-accent-green" />
+			<nav class="flex flex-row md:flex-col items-start mb-4 md:mb-0 text-sm">
+				<div class="flex flex-row space-x-6 md:flex-col md:space-x-0 md:space-y-2">
+					<div class="flex flex-col-reverse md:flex-row items-center py-1">
+						<div class="w-1 h-1 mt-1 rounded-full md:mr-2 md:mt-0 bg-accent-green" />
 						<NuxtLink
 							to="/"
-							class="no-underline transition-opacity hover:opacity-60"
-						>About</NuxtLink>
+							class="transition hover:text-text-secondary"
+						>
+							About
+						</NuxtLink>
 					</div>
-					<div class="flex flex-col-reverse items-center py-1 text-sm md:flex-row">
-						<div class="md:relative rounded-full md:mr-2 md:left-[1px] w-[4px] h-[4px] mt-1 md:mt-0 transition-transform scale-125 bg-accent-green" />
+					<div class="flex flex-col-reverse md:flex-row items-center py-1">
+						<div class="w-1 h-1 mt-1 rounded-full md:mr-2 md:mt-0 bg-accent-green" />
 						<NuxtLink
 							to="/blog"
-							class="no-underline transition-opacity hover:opacity-60"
-						>Blog</NuxtLink>
+							class="transition hover:text-text-secondary"
+						>
+							Blog
+						</NuxtLink>
 					</div>
-					<div class="flex flex-col-reverse items-center py-1 text-sm md:flex-row">
-						<div class="md:relative rounded-full md:mr-2 md:left-[1px] w-[4px] h-[4px] mt-1 md:mt-0 transition-transform scale-125 bg-accent-green" />
+					<div class="flex flex-col-reverse md:flex-row items-center  py-1">
+						<div class="w-1 h-1 mt-1 rounded-full md:mr-2 md:mt-0 bg-accent-green" />
 						<NuxtLink
 							to="/portfolio"
-							class="no-underline transition-opacity hover:opacity-60"
-						>Portfolio</NuxtLink>
+							class="transition hover:text-text-secondary"
+						>
+							Portfolio
+						</NuxtLink>
 					</div>
 				</div>
 			</nav>
