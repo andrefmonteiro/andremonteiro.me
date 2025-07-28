@@ -20,7 +20,7 @@
 			>home</a> page
 		</p>
 		<p>
-			I've always personally defined the "as code" suffix in "X as Code" to mean "a system of principles or rules"1. This is in contrast to the popular interpretation of "as code" to mean "as programming."
+			I've always <a href="/">go home</a> personally defined the "as code" suffix in "X as Code" to mean "a system of principles or rules"1. This is in contrast to the popular interpretation of "as code" to mean "as programming."
 
 			I feel the need to write this short blog post and clarify my intent because I'm often personally a target of this misunderstanding due to my history of starting Terraform2 which is a flagship "X as Code" tool.
 

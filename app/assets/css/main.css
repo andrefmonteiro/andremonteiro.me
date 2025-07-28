@@ -25,13 +25,13 @@ body {
 }
 
 a {
+	@apply no-underline
+}
+
+main a {
 	@apply underline decoration-3
 }
 
-aside a,
-h1 a {
-	@apply no-underline
-}
 
 .layout-container {
 	@apply flex flex-col mt-8 mb-40;
