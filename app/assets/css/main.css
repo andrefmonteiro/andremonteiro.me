@@ -13,10 +13,10 @@
 	--color-accent-purple: oklch(0.7349 0.0396 307.86);
 }
 /*
+*/
 * {
 	@apply border border-blue-500
 }
-*/
 
 body {
 	font-size: 18px;
@@ -45,7 +45,7 @@ main a {
       "logo name"
       "navbar content";
     grid-template-columns: 200px 1fr;
-    gap: 6rem 2rem;
+    gap: 6em 2rem;
   }
 
   .header-logo {
