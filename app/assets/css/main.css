@@ -45,7 +45,7 @@ main a {
       "logo name"
       "navbar content";
     grid-template-columns: 200px 1fr;
-    gap: 6em 2rem;
+    gap: 6rem 2rem;
   }
 
   .header-logo {
@@ -55,7 +55,6 @@ main a {
   .header-name {
     grid-area: name;
     display: flex;
-    align-items: end;
   }
   
   .app-navbar {

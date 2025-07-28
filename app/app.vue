@@ -11,7 +11,7 @@ const hasPageDetails = computed(() => {
 		<div class="layout-container">
 			<HeaderLogo class="header-logo mb-8 md:mb-0" />
 			<HeaderName class="header-name mb-4" />
-			<AppNavbar class="app-navbar md:sticky md:top-64 md:-ml-3 mb-8 md:pt-1" />
+			<AppNavbar class="app-navbar md:sticky md:top-64 mb-8 md:pt-1" />
 			<main class="main-content">
 				<PageDetails v-if="hasPageDetails" />
 				<NuxtPage />
