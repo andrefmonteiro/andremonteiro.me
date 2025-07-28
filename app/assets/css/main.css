@@ -31,3 +31,39 @@ aside a,
 h1 a {
 	@apply no-underline
 }
+
+.layout-container {
+	@apply flex flex-col mt-8 mb-40;
+}
+
+@media (min-width: 768px) { /* md: */
+  .layout-container {
+    @apply mt-32;
+    display: grid;
+    grid-template-areas:
+      "logo name"
+      "navbar content";
+    grid-template-columns: 220px 1fr;
+    gap: 6rem 2rem;
+  }
+
+  .header-logo {
+    grid-area: logo;
+  }
+  
+  .header-name {
+    grid-area: name;
+    display: flex;
+    align-items: end; /* Aligns name to bottom of its grid area */
+  }
+  
+  .app-navbar {
+    grid-area: navbar;
+    align-self: start; /* Ensures navbar starts at top of its area */
+  }
+  
+  .main-content {
+    grid-area: content;
+    align-self: start; /* Ensures content aligns with navbar */
+  }
+}

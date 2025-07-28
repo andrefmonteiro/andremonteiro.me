@@ -1,11 +1,11 @@
 <template>
-	<div class="md:ml-6">
-		<div class="max-w-5xl mx-4 md:mx-auto">
-			<div class="flex flex-col md:grid md:grid-cols-[220px_1fr] mt-8 md:mt-24 mb-40 ">
-				<AsideContent />
-				<MainContent />
-			</div>
-			<AppFooter />
+	<div class="max-w-5xl mx-4 md:px-6 md:mx-auto">
+		<div class="layout-container">
+			<HeaderLogo class="header-logo" />
+			<HeaderName class="header-name" />
+			<AppNavbar class="app-navbar" />
+			<MainContent class="main-content" />
 		</div>
+		<AppFooter />
 	</div>
 </template>
