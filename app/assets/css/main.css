@@ -12,7 +12,11 @@
 	--color-accent-peach: oklch(0.7383 0.0306 17.87);
 	--color-accent-purple: oklch(0.7349 0.0396 307.86);
 }
-
+/*
+* {
+	@apply border border-blue-500
+}
+*/
 
 body {
 	font-size: 18px;
@@ -40,7 +44,7 @@ h1 a {
     grid-template-areas:
       "logo name"
       "navbar content";
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 200px 1fr;
     gap: 6rem 2rem;
   }
 
@@ -51,16 +55,16 @@ h1 a {
   .header-name {
     grid-area: name;
     display: flex;
-    align-items: end; /* Aligns name to bottom of its grid area */
+    align-items: end;
   }
   
   .app-navbar {
     grid-area: navbar;
-    align-self: start; /* Ensures navbar starts at top of its area */
+    align-self: start;
   }
   
   .main-content {
     grid-area: content;
-    align-self: start; /* Ensures content aligns with navbar */
+    align-self: start;
   }
 }
