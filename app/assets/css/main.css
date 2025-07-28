@@ -11,12 +11,13 @@
 	--color-accent-green: oklch(0.6873 0.0401 185.84);
 	--color-accent-peach: oklch(0.7383 0.0306 17.87);
 	--color-accent-purple: oklch(0.7349 0.0396 307.86);
+	--color-accent-blue: oklch(62.892% 0.04511 233.113);
 }
 /*
-*/
 * {
 	@apply border border-blue-500
 }
+*/
 
 body {
 	font-size: 18px;

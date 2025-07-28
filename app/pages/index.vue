@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<p class="bg-surface-muted">
+		<p>
 			This is the <a
 				href="/"
 				class="text-accent-green"
@@ -16,6 +16,12 @@
 			This is the <a
 				href="/"
 				class="text-accent-purple"
+			>home</a> page
+		</p>
+		<p>
+			This is the <a
+				href="/"
+				class="text-accent-blue"
 			>home</a> page
 		</p>
 		<p>
