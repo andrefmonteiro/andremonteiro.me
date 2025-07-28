@@ -13,9 +13,6 @@
 	--color-accent-purple: oklch(0.7349 0.0396 307.86);
 }
 
-* {
-	@apply border border-blue-400
-}
 
 body {
 	font-size: 18px;
@@ -38,7 +35,7 @@ h1 a {
 
 @media (min-width: 768px) { /* md: */
   .layout-container {
-    @apply mt-32;
+    @apply mt-28;
     display: grid;
     grid-template-areas:
       "logo name"
