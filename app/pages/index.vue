@@ -12,7 +12,6 @@
 				class="text-accent-peach"
 			>home</a> page
 		</p>
-		<br>
 		<p>
 			This is the <a
 				href="/"
