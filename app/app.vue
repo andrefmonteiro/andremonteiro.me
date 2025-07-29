@@ -15,7 +15,7 @@ const hasPageDetails = computed(() => {
 				<AppNavbar class="navbar" />
 			</div>
 
-			<div class="flex flex-col gap-8 md:flex-1 md:mt-1">
+			<div class="flex flex-col gap-8 md:gap-2 md:flex-1 md:mt-1">
 				<HeaderName class="hidden md:block md:mb-24" />
 
 				<main>
