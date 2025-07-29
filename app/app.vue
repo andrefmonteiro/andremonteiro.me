@@ -8,16 +8,15 @@ const hasPageDetails = computed(() => {
 
 <template>
 	<div class="max-w-5xl mx-4 md:px-6 md:mx-auto">
-		<div class="flex flex-col gap-8 mt-8 mb-40 md:flex-row md:mt-28 md:items-start">
-			<div class="flex flex-col gap-8 md:w-[200px] md:flex-shrink-0 md:gap-24 md:sticky md:top-0 md:self-start">
-				<HeaderLogo class="logo" />
-				<HeaderName class="md:hidden" />
-				<AppNavbar class="navbar" />
+		<div class="flex flex-col gap-8 mt-6 mb-40 md:flex-row md:mt-28 md:items-start">
+			<div class="flex flex-col md:w-[200px] md:flex-shrink-0 md:gap-24 md:sticky md:top-0 md:self-start">
+				<HeaderLogo class="mb-6 md:mb-0" />
+				<HeaderName class="md:hidden mb-2 md:mb-0" />
+				<AppNavbar />
 			</div>
 
-			<div class="flex flex-col gap-8 md:gap-2 md:flex-1 md:mt-1">
-				<HeaderName class="hidden md:block md:mb-24" />
-
+			<div class="flex flex-col gap-8 md:gap-26 md:flex-1 md:pt-1">
+				<HeaderName class="hidden md:block" />
 				<main>
 					<PageDetails v-if="hasPageDetails" />
 					<NuxtPage />
