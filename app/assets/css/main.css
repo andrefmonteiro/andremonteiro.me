@@ -15,10 +15,10 @@
 }
 
 /* 
-*/
 * {
 	@apply border border-blue-500
 }
+*/
 
 body {
 	@apply bg-surface-default text-base leading-[1.5];
