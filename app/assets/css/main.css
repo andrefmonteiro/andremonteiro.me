@@ -13,16 +13,16 @@
 	--color-accent-purple: oklch(0.7349 0.0396 307.86);
 	--color-accent-blue: oklch(62.892% 0.04511 233.113);
 }
-/*
+
+/* 
+*/
 * {
 	@apply border border-blue-500
 }
-*/
 
 body {
-	font-size: 18px;
-	@apply bg-surface-default text-lg/10;
-	@apply text-text-primary
+	@apply bg-surface-default text-base leading-[1.4];
+	@apply text-text-primary;
 }
 
 a {
@@ -31,40 +31,4 @@ a {
 
 main a {
 	@apply underline decoration-3
-}
-
-
-.layout-container {
-	@apply flex flex-col mt-8 mb-40;
-}
-
-@media (min-width: 768px) { /* md: */
-  .layout-container {
-    @apply mt-28;
-    display: grid;
-    grid-template-areas:
-      "logo name"
-      "navbar content";
-    grid-template-columns: 200px 1fr;
-    gap: 6rem 2rem;
-  }
-
-  .header-logo {
-    grid-area: logo;
-  }
-  
-  .header-name {
-    grid-area: name;
-    display: flex;
-  }
-  
-  .app-navbar {
-    grid-area: navbar;
-    align-self: start;
-  }
-  
-  .main-content {
-    grid-area: content;
-    align-self: start;
-  }
 }
