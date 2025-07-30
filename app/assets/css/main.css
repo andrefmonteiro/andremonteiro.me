@@ -2,11 +2,10 @@
 
 @theme {
 	--color-surface-default: oklch(0.171 0.0166 188.58);
-	--color-surface-muted: oklch(0.2421 0.0274 187.55);
+	--color-surface-muted: oklch(0.2792 0.0274 187.55);
 	
 	--color-text-primary: oklch(0.849 0.0077 164.9);
-	--color-text-secondary: oklch(0.7698 0.0089 168.67);
-	--color-text-tertiary: oklch(0.6032 0.0094 168.56);
+	--color-text-secondary: oklch(0.6824 0.0145 166.97);
 	
 	--color-accent-green: oklch(0.6873 0.0401 185.84);
 	--color-accent-peach: oklch(0.7383 0.0306 17.87);
@@ -15,10 +14,10 @@
 }
 
 /* 
-*/
 * {
 	@apply border border-blue-500
 }
+*/
 
 body {
 	@apply bg-surface-default text-base leading-[1.5];
