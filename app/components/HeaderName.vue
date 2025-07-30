@@ -1,5 +1,5 @@
 <template>
-	<h1 class="uppercase">
+	<p class="uppercase text-xl font-stretch-expanded font-bold">
 		<NuxtLink to="/">André Monteiro</NuxtLink>
-	</h1>
+	</p>
 </template>
