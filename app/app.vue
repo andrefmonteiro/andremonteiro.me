@@ -14,10 +14,13 @@ const hasPageDetails = computed(() => {
 			<AppNavbar />
 		</div>
 
-		<div class="flex flex-col gap-8 md:gap-26 md:flex-1 md:pt-1">
-			<HeaderName class="hidden md:block" />
-			<main>
-				<PageDetails v-if="hasPageDetails" />
+		<div class="flex flex-col md:flex-1 md:pt-1">
+			<HeaderName class="hidden md:block mb-8 md:mb-25" />
+			<main class="mb-16 md:mb-28">
+				<PageDetails
+					v-if="hasPageDetails"
+					class="mb-8 md:mb-16"
+				/>
 				<NuxtPage />
 			</main>
 			<AppFooter />
