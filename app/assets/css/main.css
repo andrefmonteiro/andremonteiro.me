@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-	--color-surface-default: oklch(0.171 0.0166 188.58);
-	--color-surface-muted: oklch(0.2151 0.0233 185.93);
+	--color-surface-default: oklch(16.548% 0.02564 180.962);
+	--color-surface-muted: oklch(27.119% 0.04646 176.498);
 	
 	--color-text-primary: oklch(0.849 0.0077 164.9);
 	--color-text-secondary: oklch(0.6824 0.0145 166.97);
@@ -12,7 +12,6 @@
 	--color-accent-peach: oklch(0.7383 0.0306 17.87);
 	--color-accent-purple: oklch(0.7349 0.0396 307.86);
 	--color-accent-blue: oklch(62.892% 0.04511 233.113);
-	
 }
 
 /* 
