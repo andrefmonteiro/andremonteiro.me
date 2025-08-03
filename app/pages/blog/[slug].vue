@@ -20,7 +20,9 @@ useSeoMeta({
 </script>
 
 <template>
-	<div v-if="post">
+	<div
+		v-if="post"
+	>
 		<header>
 			<h1>
 				{{ post?.title }}
