@@ -3,7 +3,7 @@ import BlogPostCard from '../components/BlogPostCard.vue'
 
 const { data: posts } = await useAsyncData('blog', () => queryCollection('blog').all())
 
-console.log('Blog posts:\n', posts)
+console.log('Post structure after schema:', posts.value?.[0])
 </script>
 
 <template>

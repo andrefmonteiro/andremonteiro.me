@@ -1,11 +1,13 @@
 ---
 title: Second post
 date: 03-01-1996
+description: A piece of writing about experience.
 ---
 # Second post
 
-I'm more experienced now. Some code:
+{{$doc.description}}
 
+Some code:
 ```
 console.log("Hello, World!")
 ```
