@@ -15,8 +15,8 @@ console.log('Blog posts:\n', posts)
 			:to="post.path"
 		>
 			<BlogPostCard
-				:title="post.title || 'Untitled post'"
-				:date="post.meta?.date as string || 'No date'"
+				:title="post.title"
+				:date="post.date"
 			/>
 		</NuxtLink>
 	</div>
