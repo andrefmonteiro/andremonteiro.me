@@ -6,7 +6,6 @@ console.log('Post structure after schema:', posts.value?.[0])
 
 <template>
 	<div>
-		Blog
 		<NuxtLink
 			v-for="post in posts"
 			:key="post.path"
