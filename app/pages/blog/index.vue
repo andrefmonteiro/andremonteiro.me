@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import BlogPostCard from '../components/BlogPostCard.vue'
-
 const { data: posts } = await useAsyncData('blog', () => queryCollection('blog').all())
 
 console.log('Post structure after schema:', posts.value?.[0])
