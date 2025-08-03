@@ -25,6 +25,14 @@ body {
 	@apply text-text-primary text-base leading-[1.5];
 }
 
+main p {
+	margin-bottom: 1rem;
+}
+
+main p:last-child {
+	margin-bottom: 0;
+}
+
 a {
 	@apply no-underline
 }
