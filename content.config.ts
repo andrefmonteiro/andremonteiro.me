@@ -8,6 +8,7 @@ export default defineContentConfig({
 			schema: z.object({
 				title: z.string(),
 				date: z.string(),
+				description: z.string(),
 			}),
 		}),
 		portfolio: defineCollection({
@@ -16,7 +17,10 @@ export default defineContentConfig({
 			schema: z.object({
 				title: z.string(),
 				date: z.string(),
-				tags: z.array(z.string()),
+				description: z.string(),
+				tech_stack: z.array(z.string()),
+				live_url: z.string(),
+				github_url: z.string(),
 			}),
 		}),
 	},
