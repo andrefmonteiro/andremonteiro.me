@@ -30,7 +30,7 @@ main h1 {
 }
 
 main h2 {
-	@apply text-2xl font-semibold text-text-heading mb-5 mt-8;
+	@apply text-2xl font-semibold text-text-heading mb-3 mt-8;
 }
 
 main h3 {

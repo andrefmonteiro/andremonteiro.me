@@ -27,13 +27,8 @@ useSeoMeta({
 </script>
 ```
 ---
-More code:
 
-`undefined`
+\
+Here's a paragraph with an image:
 
-No line break
-between these two
-
-
-A line break\
-between **these** two
+![king fisher](/images/Woodland-Kingfisher.jpg "This is my second favorite bird")

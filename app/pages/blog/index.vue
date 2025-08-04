@@ -15,8 +15,6 @@ const sortedPosts = computed(() => {
 		}
 	})
 })
-
-// const toggleSort = () => sortAscending.value = !sortAscending.value
 </script>
 
 <template>
@@ -25,7 +23,7 @@ const sortedPosts = computed(() => {
 			v-for="post in sortedPosts"
 			:key="post.path"
 			:to="post.path"
-			class="block border-b border-surface-muted pt-3 pb-3 last:border-b-0 first:pt-0"
+			class="block border-b border-surface-muted pt-3 last:border-b-0 first:pt-0"
 		>
 			<BlogPostCard
 				:title="post.title"
