@@ -16,31 +16,20 @@ const sortedPosts = computed(() => {
 	})
 })
 
-const toggleSort = () => sortAscending.value = !sortAscending.value
+// const toggleSort = () => sortAscending.value = !sortAscending.value
 </script>
 
 <template>
-	<div class="flex flex-col">
-		<button
-			class="self-end"
-			@click="toggleSort"
+	<div>
+		<NuxtLink
+			v-for="post in sortedPosts"
+			:key="post.path"
+			:to="post.path"
 		>
-			<Icon
-				name="grommet-icons:unsorted"
-				size="32px"
+			<BlogPostCard
+				:title="post.title"
+				:date="post.date"
 			/>
-		</button>
-		<div>
-			<NuxtLink
-				v-for="post in sortedPosts"
-				:key="post.path"
-				:to="post.path"
-			>
-				<BlogPostCard
-					:title="post.title"
-					:date="post.date"
-				/>
-			</NuxtLink>
-		</div>
+		</NuxtLink>
 	</div>
 </template>
