@@ -25,6 +25,53 @@ body {
 	@apply text-text-primary text-base leading-[1.5];
 }
 
+main h1 {
+	@apply text-3xl font-bold text-text-heading mb-6 mt-8;
+}
+
+main h2 {
+	@apply text-2xl font-semibold text-text-heading mb-5 mt-8;
+}
+
+main h3 {
+	@apply text-xl font-medium text-text-heading mb-4 mt-6;
+}
+
+main h1:first-child,
+main h2:first-child,
+main h3:first-child {
+	@apply mt-0;
+}
+
+main ul {
+  @apply mb-4 ml-6;
+  list-style-type: disc;
+}
+main ul ul {
+  @apply mt-1 mb-1;
+  list-style-type: circle;
+}
+
+main ol {
+  @apply mb-4 ml-6;
+  list-style-type: decimal;
+}
+main ol {
+  list-style-type: lower-alpha;
+}
+
+main li {
+  @apply mb-1;
+}
+
+main figure {
+  @apply mb-6;
+}
+
+main figcaption {
+  @apply text-sm text-text-secondary text-center mt-1;
+}
+
 main p {
 	margin-bottom: 1rem;
 }

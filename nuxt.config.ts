@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 			markdown: {
 				highlight: {
 					theme: {
-						default: 'github-dark',
+						default: 'laserwave',
 					},
 				},
 			},
