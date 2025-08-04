@@ -57,19 +57,23 @@ const OptimizedImg = defineComponent({
 	<div
 		v-if="post"
 	>
-		<header>
-			<h1>
+		<header class="-mt-1 border-b border-surface-muted pb-4">
+			<h1 class="mb-2">
 				{{ post?.title }}
 			</h1>
-			<time :datetime="post?.date">
+			<time
+				:datetime="post?.date"
+				class="text-sm text-text-tertiary block mb-4"
+			>
 				{{ post?.date }}
 			</time>
 			<p class="text-text-secondary">
 				{{ post?.description }}
 			</p>
 		</header>
-
+		<br>
 		<ContentRenderer
+			class=""
 			:value="post"
 			:components="{ img: OptimizedImg }"
 		/>
