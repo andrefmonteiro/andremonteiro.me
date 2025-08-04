@@ -2,7 +2,7 @@
 
 @theme {
 	--color-surface-default: oklch(16.548% 0.02564 180.962);
-	--color-surface-muted: oklch(24.142% 0.03502 179.527);
+	--color-surface-muted: oklch(22.031% 0.02153 180.19);
 	
 	--color-text-primary: oklch(0.849 0.0077 164.9);
 	--color-text-secondary: oklch(0.6824 0.0145 166.97);
@@ -94,5 +94,9 @@ main p a {
 }
 
 main code {
-  @apply bg-surface-muted text-accent-peach px-1.5 py-0.5 rounded text-sm font-mono;
+  @apply bg-surface-muted text-blue-200 px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+main pre {
+	@apply bg-surface-muted px-4 py-2 max-w-fit rounded-lg overflow-x-auto;
 }

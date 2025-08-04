@@ -35,7 +35,7 @@ Anatomy of the Parser
 The parser uses a struct called Parser to store in-progress parsing state. This is not a publicly exported struct and is only used to manage internal state of the parse operation. Callers are returned an Ast as a result of a parsing operation, which is explored later in this page.
 
 The structure of the parser at the time of writing is shown below. I’ve inserted newlines to separate the state into functional groups.
-
+```
 const Parser = struct {
     gpa: Allocator,
     source: []const u8,
@@ -49,6 +49,7 @@ const Parser = struct {
     extra_data: std.ArrayListUnmanaged(Node.Index),
     scratch: std.ArrayListUnmanaged(Node.Index),
 };
+```
 The first group contains gpa and source. This is the allocator and full original source code of a single Zig file.
 
 In the second group, token_tags and token_starts are the deconstructed results of tokenization. As noted earlier, the parser applies data-oriented design for better memory usage and cache locality. Therefore, token_tags.len == token_starts.len, they’re just the struct fields placed into separate contiguous chunks of memory. The tok_i value is the index to the current token that the parser is looking at (starting at 0).
