@@ -41,6 +41,6 @@ a {
 	@apply no-underline
 }
 
-main a {
+main p a {
 	@apply underline decoration-3
 }

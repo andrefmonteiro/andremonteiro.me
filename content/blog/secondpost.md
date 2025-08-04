@@ -1,6 +1,6 @@
 ---
 title: Second post
-date: 03-01-1996
+date: 1996-01-03
 description: A piece of writing about experience.
 ---
 Some code:
