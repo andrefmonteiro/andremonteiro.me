@@ -25,6 +25,7 @@ const sortedPosts = computed(() => {
 			v-for="post in sortedPosts"
 			:key="post.path"
 			:to="post.path"
+			class="border-b-2 border-red-400 last:border-b-0"
 		>
 			<BlogPostCard
 				:title="post.title"
