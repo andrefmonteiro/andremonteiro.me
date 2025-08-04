@@ -1,7 +1,7 @@
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
-	modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/content'],
+	modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/content', '@nuxt/image'],
 	devtools: { enabled: true },
 	css: ['~/assets/css/main.css'],
 	content: {
@@ -25,6 +25,19 @@ export default defineNuxtConfig({
 		config: {
 			stylistic: {
 				indent: 'tab',
+			},
+		},
+	},
+	image: {
+		quality: 80,
+		format: ['webp', 'jpg'],
+		presets: {
+			default: {
+				modifiers: {
+					width: 800,
+					height: 600,
+					fit: 'inside',
+				},
 			},
 		},
 	},
