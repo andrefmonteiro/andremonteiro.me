@@ -4,8 +4,8 @@ date: 1996-01-03
 description: A piece of writing about experience.
 ---
 Some code:
-```
-<script setup lang="ts">
+``` typescript
+<script setup>
 const route = useRoute()
 const slug = route.params.slug
 
