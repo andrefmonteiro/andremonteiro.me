@@ -14,7 +14,7 @@ const { data: projects } = await useAsyncData('portfolio', () => queryCollection
 			<ProjectCard
 				:title="project.title"
 				:description="project.description"
-				:tech-stack="project.techStack"
+				:tech-stack="project.tech_stack"
 			/>
 		</NuxtLink>
 	</div>
