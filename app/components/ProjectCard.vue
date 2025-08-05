@@ -1,10 +1,10 @@
-<script setup>
+<script setup lang="ts">
 const props = defineProps({
 	title: String,
 	description: String,
-	techStack: Array<string>,
-	liveUrl = String,
-	githubUrl = String,
+	techStack: Array as () => string[],
+	liveUrl: String,
+	githubUrl: String,
 })
 </script>
 
@@ -12,8 +12,11 @@ const props = defineProps({
 	<div class="border border-surface-muted">
 		<h2>{{ props.title }}</h2>
 		<p>{{ props.description }}</p>
-		<div>
-			<div :v-for="tool in techStack">
+		<div class="flex">
+			<div
+				v-for="tool in techStack"
+				:key="tool"
+			>
 				{{ tool }}
 			</div>
 		</div>

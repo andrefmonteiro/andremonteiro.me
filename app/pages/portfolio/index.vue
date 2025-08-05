@@ -1,7 +1,21 @@
+<script setup>
+import ProjectCard from '~/components/ProjectCard.vue'
+
+const { data: projects } = await useAsyncData('portfolio', () => queryCollection('portfolio').all())
+</script>
+
 <template>
 	<div>
-		<p>
-			Portfolio
-		</p>
+		<NuxtLink
+			v-for="project in projects"
+			:key="project.title"
+			:to="project.path"
+		>
+			<ProjectCard
+				:title="project.title"
+				:description="project.description"
+				:tech-stack="project.techStack"
+			/>
+		</NuxtLink>
 	</div>
 </template>
