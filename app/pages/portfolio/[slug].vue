@@ -21,11 +21,24 @@ useSeoMeta({
 
 <template>
 	<div v-if="project">
-		<header>
-			<h1>{{ project.title }}</h1>
+		<header class="-mt-1 border-b border-surface-muted pb-4">
+			<h1 class="mb-2">
+				{{ project.title }}
+			</h1>
 			<p class="text-text-secondary">
 				{{ project.description }}
 			</p>
+			<div class="flex gap-5">
+				<div
+					v-for="tool in project.tech_stack"
+					:key="tool"
+				>
+					<Icon
+						:name="TECH_STACK_ICONS[tool as keyof typeof TECH_STACK_ICONS]!"
+						size="18px"
+					/>
+				</div>
+			</div>
 		</header>
 		<br>
 		<ContentRenderer
