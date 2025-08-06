@@ -5,7 +5,7 @@ const { data: projects } = await useAsyncData('portfolio', () => queryCollection
 </script>
 
 <template>
-	<div>
+	<div class="-mt-1 flex flex-col gap-8">
 		<NuxtLink
 			v-for="project in projects"
 			:key="project.title"

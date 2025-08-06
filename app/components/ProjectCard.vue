@@ -9,9 +9,11 @@ const props = defineProps({
 </script>
 
 <template>
-	<div class="border border-surface-muted">
+	<div class="border rounded-xl border-surface-muted p-4">
 		<h2>{{ props.title }}</h2>
-		<p>{{ props.description }}</p>
+		<p class="text-text-secondary">
+			{{ props.description }}
+		</p>
 		<div class="flex">
 			<div
 				v-for="tool in techStack"
