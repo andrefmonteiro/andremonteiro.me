@@ -19,7 +19,10 @@ const props = defineProps({
 				v-for="tool in techStack"
 				:key="tool"
 			>
-				{{ tool }}
+				<Icon
+					:name="TECH_STACK_ICONS[tool as keyof typeof TECH_STACK_ICONS]!"
+					size="18px"
+				/>
 			</div>
 		</div>
 	</div>
