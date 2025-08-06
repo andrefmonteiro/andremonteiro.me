@@ -65,16 +65,9 @@ main li {
   @apply mb-1;
 }
 
-main figure {
-  @apply mb-6;
-}
-
-main figcaption {
-  @apply text-sm text-text-secondary text-center mt-1;
-}
 
 main p {
-	margin-bottom: 1rem;
+	@apply mb-4
 }
 
 main p:last-child {
@@ -98,5 +91,5 @@ main code {
 }
 
 main pre {
-	@apply bg-surface-muted px-4 py-2 max-w-fit rounded-lg overflow-x-auto;
+	@apply bg-surface-muted px-8 py-0 max-w-fit rounded-lg overflow-x-auto;
 }
