@@ -18,12 +18,25 @@ const props = defineProps({
 			<div
 				v-for="tool in techStack"
 				:key="tool"
+				class="tech-icon"
 			>
 				<Icon
 					:name="TECH_STACK_ICONS[tool as keyof typeof TECH_STACK_ICONS]!"
 					size="18px"
+					class=""
 				/>
 			</div>
 		</div>
 	</div>
 </template>
+
+<style>
+.tech-icon {
+  filter: grayscale(100%);
+  transition: filter 150ms ease;
+}
+
+.tech-icon:hover {
+  filter: none;
+}
+</style>

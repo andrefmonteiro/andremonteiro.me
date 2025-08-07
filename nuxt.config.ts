@@ -28,6 +28,9 @@ export default defineNuxtConfig({
 			},
 		},
 	},
+	icon: {
+		mode: 'svg',
+	},
 	image: {
 		quality: 80,
 		format: ['webp', 'jpg'],

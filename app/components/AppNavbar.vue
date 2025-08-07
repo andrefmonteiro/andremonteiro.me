@@ -19,7 +19,7 @@
 					Blog
 				</NuxtLink>
 			</div>
-			<div class="flex flex-col-reverse md:flex-row items-center  py-1">
+			<div class="flex flex-col-reverse md:flex-row items-center py-1">
 				<div class="w-1 h-1 mt-1 rounded-full md:mr-2 md:mt-0 bg-accent-green" />
 				<NuxtLink
 					to="/portfolio"
