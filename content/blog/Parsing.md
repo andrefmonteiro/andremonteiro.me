@@ -4,7 +4,22 @@ date: August 4, 2025
 description: On how learning about parsing can make your compilation process more effective.
 
 ---
-Parsing is the next step in the compilation pipeline following tokenization. Parsing is responsible for constructing an abstract syntax tree from a stream of tokens. I’ve previously written about how Zig converts a stream of bytes (source) into a stream of tokens.
+
+<!-- Same tab -->
+Jump to [the beginning](#the-beginning)\
+Jump to [the end](#the-end)
+
+See my [first post](/blog/hello-world)\
+Check out [this project](/portfolio/organizify)
+Visit my [about page](/)
+
+<!-- New tab with arrow -->
+Read more on [Wikipedia](https://wikipedia.org)
+
+## The Beginning
+Regarding my [first](/blog/hello-world) blog post:
+
+Parsing is the next step in the compilation pipeline following tokenization. Parsing is responsible for constructing an [abstract](https://en.wikipedia.org/wiki/Abstraction_(computer_science)) syntax tree from a stream of tokens. I’ve previously written about how Zig converts a stream of bytes (source) into a stream of tokens.
 
 The Zig parser is located at `lib/std/zig/parser.zig` in the Zig source tree. It is available as part of the standard library via std.zig.parse(). The parser takes full source text and returns an std.zig.Ast (defined in lib/std/zig/Ast.zig).
 
@@ -91,6 +106,8 @@ AST Node Data
 A key part of any AST node is data associated with it. For example, a function declaration has a function name, a parameter list, a return type, body, etc. Looking at the Node structure, it isn’t immediately clear where this information might be.
 
 This is an extremely important detail to understand before we can dive into how the parser works. And for those who want to know how the entire compiler pipeline works, this is a particularly critical detail since the AST uses a pattern that is reused throughout the compilation pipeline for other intermediary forms.
+
+## The end
 
 Let’s look at how the AST for a function declaration would be structured for the given Zig code:
 

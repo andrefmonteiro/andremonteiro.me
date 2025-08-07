@@ -65,7 +65,6 @@ main li {
   @apply mb-1;
 }
 
-
 main p {
 	@apply mb-4
 }
@@ -83,11 +82,11 @@ a {
 }
 
 main p a {
-	@apply underline decoration-3
+	@apply underline decoration-3 text-accent-green hover:brightness-150 transition
 }
 
 main code {
-  @apply bg-surface-muted text-blue-200 px-1.5 py-0.5 rounded text-sm font-mono;
+  @apply bg-surface-muted text-accent-blue px-1.5 py-0.5 rounded text-sm font-mono;
 }
 
 main pre {
