@@ -10,7 +10,7 @@ Jump to [the beginning](#the-beginning)\
 Jump to [the end](#the-end)
 
 See my [first post](/blog/hello-world)\
-Check out [this project](/portfolio/organizify)
+Check out this project /portfolio/organizify
 Visit my [about page](/)
 
 <!-- New tab with arrow -->

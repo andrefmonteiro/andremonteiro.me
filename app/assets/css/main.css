@@ -82,7 +82,7 @@ a {
 }
 
 main p a {
-	@apply underline decoration-3 text-accent-green hover:brightness-150 transition
+	@apply underline underline-offset-4 decoration-2 text-accent-green hover:brightness-150 transition
 }
 
 main code {
