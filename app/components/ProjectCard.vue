@@ -7,8 +7,10 @@ const props = defineProps({
 </script>
 
 <template>
-	<div class="border rounded-xl border-surface-muted p-4 group">
-		<h2>{{ props.title }}</h2>
+	<div class="border rounded-xl border-surface-muted p-4">
+		<h2 class="text-xl font-semibold text-text-heading mb-3 mt-8;">
+			{{ props.title }}
+		</h2>
 		<p class="text-text-secondary">
 			{{ props.description }}
 		</p>

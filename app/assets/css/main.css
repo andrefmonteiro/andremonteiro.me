@@ -30,12 +30,8 @@ main h1 {
 	@apply text-2xl font-bold text-text-heading;
 }
 
-main h2 {
+.body-content h2 {
 	@apply text-xl font-semibold text-text-heading mb-3 mt-8;
-}
-
-main a h2 {
-	@apply hover:text-text-secondary
 }
 
 main h3 {
