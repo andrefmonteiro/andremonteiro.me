@@ -106,3 +106,7 @@ main pre {
 .tooltip:hover::before {
   @apply opacity-100 visible;
 }
+
+.nav-dot-active {
+  box-shadow: 0 0 8px var(--color-accent-green), 0 0 4px var(--color-accent-green);
+}
