@@ -16,8 +16,9 @@ const props = defineProps({
 			<div
 				v-for="tool in techStack"
 				:key="tool"
-				class="text-text-tertiary"
+				class="text-text-tertiary tooltip"
 				:title="tool"
+				:data-tooltip="tool"
 			>
 				<Icon
 					:name="TECH_STACK_ICONS[tool] || ''"
