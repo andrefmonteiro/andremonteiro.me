@@ -4,7 +4,7 @@ const props = defineProps({ title: String, date: String })
 
 <template>
 	<article class="flex flex-col md:flex-row justify-between md:gap-8">
-		<h2 class="flex-1 transition hover:text-text-primary mb-0 pb-0">
+		<h2 class="flex-1">
 			{{ props.title }}
 		</h2>
 
