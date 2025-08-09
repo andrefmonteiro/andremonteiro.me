@@ -12,11 +12,11 @@ const props = defineProps({
 		<p class="text-text-secondary">
 			{{ props.description }}
 		</p>
-		<div class="flex gap-5">
+		<div class="mt-8 flex gap-5">
 			<div
 				v-for="tool in techStack"
 				:key="tool"
-				class="grayscale-100  group-hover:grayscale-50 transition duration-150"
+				class="text-text-tertiary"
 				:title="tool"
 			>
 				<Icon
