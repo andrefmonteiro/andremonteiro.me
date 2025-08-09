@@ -33,29 +33,31 @@ useSeoMeta({
 				<span
 					v-for="tool in project.tech_stack"
 					:key="tool"
-					class="px-2 py-1 bg-surface-muted text-text-primary text-xs rounded-md"
+					class="px-2 py-1 bg-surface-muted text-text-secondary text-xs rounded-md flex gap-2"
 				>
-					{{ tool }}
+					<p>
+						{{ tool }}
+					</p>
 				</span>
 			</div>
 
-			<div class="flex gap-4 text-accent-green">
+			<div class="flex gap-4 text-accent-green ">
 				<a
 					:href="project.github_url"
 					target="_blank"
 					rel="noopener noreferrer"
+					class="flex gap-2"
 				>
 					GitHub ↗
-
 				</a>
 				<p>|</p>
 				<a
 					:href="project.live_url"
 					target="_blank"
 					rel="noopener noreferrer"
+					class="flex gap-2"
 				>
 					Live ↗
-
 				</a>
 			</div>
 		</header>

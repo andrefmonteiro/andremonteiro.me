@@ -78,7 +78,7 @@ pre {
 }
 
 .body-content p a {
-	@apply underline underline-offset-4 decoration-1 text-accent-green hover:brightness-125 transition
+	@apply underline underline-offset-4 decoration-2 text-accent-green hover:brightness-125 transition
 }
 
 main code {
