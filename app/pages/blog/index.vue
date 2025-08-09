@@ -18,17 +18,23 @@ const sortedPosts = computed(() => {
 </script>
 
 <template>
-	<div>
-		<NuxtLink
-			v-for="post in sortedPosts"
-			:key="post.path"
-			:to="post.path"
-			class="block border-b border-surface-muted pt-3 last:border-b-0 first:pt-0"
-		>
-			<BlogPostCard
-				:title="post.title"
-				:date="post.date"
-			/>
-		</NuxtLink>
-	</div>
+	<section>
+		<header class="sr-only">
+			<h1>Blog Posts</h1>
+		</header>
+
+		<div class="-mt-1">
+			<NuxtLink
+				v-for="post in sortedPosts"
+				:key="post.path"
+				:to="post.path"
+				class="block border-b border-surface-muted pt-3 last:border-b-0 first:pt-0"
+			>
+				<BlogPostCard
+					:title="post.title"
+					:date="post.date"
+				/>
+			</NuxtLink>
+		</div>
+	</section>
 </template>

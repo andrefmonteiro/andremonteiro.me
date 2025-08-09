@@ -21,9 +21,7 @@ useSeoMeta({
 </script>
 
 <template>
-	<div
-		v-if="post"
-	>
+	<article v-if="post">
 		<header class="-mt-1 border-b border-surface-muted pb-4 mb-8">
 			<h1 class="mb-2">
 				{{ post.title }}
@@ -38,9 +36,10 @@ useSeoMeta({
 				{{ post.description }}
 			</p>
 		</header>
+
 		<ContentRenderer
 			:value="post"
 			class="body-content"
 		/>
-	</div>
+	</article>
 </template>
