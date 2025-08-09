@@ -13,14 +13,14 @@ const handleError = async (route: string) => {
 </script>
 
 <template>
-	<div class="max-w-5xl px-6 min-h-sc mx-auto mb-32 mt-28 flex flex-col items-center justify-center">
+	<div class="max-w-5xl px-6 min-h-screen mx-auto -mt-16 flex flex-col items-center justify-center">
 		<h1 class="text-6xl font-bold text-text-heading mb-6">
 			{{ error?.statusCode }}
 		</h1>
 
 		<h2
 			v-if="error?.statusCode === 404"
-			class="text-center text-xl md:text-2xl text-text-secondary mb-8 leading-relaxed"
+			class="text-center text-xl md:text-2xl mb-8 leading-relaxed"
 		>
 			You're trying to reach an obscure corner of the Internet.<br>
 			We don't blame you.
