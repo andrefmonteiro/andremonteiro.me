@@ -3,8 +3,6 @@ const props = defineProps({
 	title: String,
 	description: String,
 	techStack: Array as () => string[],
-	liveUrl: String,
-	githubUrl: String,
 })
 </script>
 
