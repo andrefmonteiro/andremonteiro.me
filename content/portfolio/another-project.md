@@ -1,7 +1,7 @@
 ---
 title: Something
 description: A test project
-tech_stack: [react, typescript, java]
+tech_stack: [React, TypeScript, Java]
 live_url: https://google.com
 github_url: https://github.com/andrefmonteiro
 ---

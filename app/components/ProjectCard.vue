@@ -9,7 +9,7 @@ const props = defineProps({
 </script>
 
 <template>
-	<div class="border rounded-xl border-surface-muted p-4">
+	<div class="border rounded-xl border-surface-muted p-4 group">
 		<h2>{{ props.title }}</h2>
 		<p class="text-text-secondary">
 			{{ props.description }}
@@ -18,25 +18,14 @@ const props = defineProps({
 			<div
 				v-for="tool in techStack"
 				:key="tool"
-				class="tech-icon"
+				class="grayscale-100 group-hover:grayscale-50 transition duration-150"
+				:title="tool"
 			>
 				<Icon
-					:name="TECH_STACK_ICONS[tool as keyof typeof TECH_STACK_ICONS]!"
+					:name="TECH_STACK_ICONS[tool] || ''"
 					size="18px"
-					class=""
 				/>
 			</div>
 		</div>
 	</div>
 </template>
-
-<style>
-.tech-icon {
-  filter: grayscale(100%);
-  transition: filter 150ms ease;
-}
-
-.tech-icon:hover {
-  filter: none;
-}
-</style>

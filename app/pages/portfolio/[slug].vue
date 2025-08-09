@@ -32,10 +32,12 @@ useSeoMeta({
 				<div
 					v-for="tool in project.tech_stack"
 					:key="tool"
+					:title="tool"
 				>
 					<Icon
 						:name="TECH_STACK_ICONS[tool as keyof typeof TECH_STACK_ICONS]!"
 						size="18px"
+						class="grayscale-50"
 					/>
 				</div>
 			</div>
