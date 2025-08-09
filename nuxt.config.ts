@@ -1,9 +1,20 @@
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
-	modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/content', '@nuxt/image'],
+	modules: [
+		'@nuxtjs/sitemap',
+		'@nuxtjs/robots',
+		'@nuxt/eslint',
+		'@nuxt/icon',
+		'@nuxt/content',
+		'@nuxt/image',
+	],
 	devtools: { enabled: true },
 	css: ['~/assets/css/main.css'],
+	site: {
+		url: 'https://andremonteiro.me',
+		name: 'André Monteiro',
+	},
 	content: {
 		build: {
 			markdown: {

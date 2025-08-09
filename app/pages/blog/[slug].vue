@@ -16,6 +16,7 @@ if (!post.value) {
 useSeoMeta({
 	title: post.value.title,
 	description: post.value.description,
+	...post.value.seo || {},
 })
 </script>
 

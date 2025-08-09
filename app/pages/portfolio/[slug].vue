@@ -16,6 +16,7 @@ if (!project.value) {
 useSeoMeta({
 	title: project.value.title,
 	description: project.value.description,
+	...project.value.seo || {},
 })
 </script>
 
