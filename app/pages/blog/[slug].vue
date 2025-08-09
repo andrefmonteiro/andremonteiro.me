@@ -24,7 +24,7 @@ useSeoMeta({
 	<div
 		v-if="post"
 	>
-		<header class="-mt-1 border-b border-surface-muted pb-4">
+		<header class="-mt-1 border-b border-surface-muted pb-4 mb-8">
 			<h1 class="mb-2">
 				{{ post.title }}
 			</h1>
@@ -38,7 +38,6 @@ useSeoMeta({
 				{{ post.description }}
 			</p>
 		</header>
-		<br>
 		<ContentRenderer
 			:value="post"
 			class="body-content"
