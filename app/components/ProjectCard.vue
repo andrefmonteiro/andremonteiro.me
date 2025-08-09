@@ -12,7 +12,7 @@ const props = defineProps({
 		<p class="text-text-secondary">
 			{{ props.description }}
 		</p>
-		<div class="mt-8 flex gap-5">
+		<div class="mt-8 flex gap-4">
 			<div
 				v-for="tool in techStack"
 				:key="tool"

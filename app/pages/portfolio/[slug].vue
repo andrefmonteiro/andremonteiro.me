@@ -29,35 +29,42 @@ useSeoMeta({
 				{{ project.description }}
 			</p>
 
-			<div class="flex gap-2 mt-6 mb-6">
+			<div class="flex gap-4 mt-6 mb-8">
 				<span
 					v-for="tool in project.tech_stack"
 					:key="tool"
-					class="px-2 py-1 bg-surface-muted text-text-secondary text-xs rounded-md flex gap-2"
+					class="text-text-tertiary tooltip"
+					:data-tooltip="tool"
 				>
-					<p>
-						{{ tool }}
-					</p>
+					<Icon
+						:name="TECH_STACK_ICONS[tool as keyof typeof TECH_STACK_ICONS]!"
+						size="18px"
+					/>
 				</span>
 			</div>
-
-			<div class="flex gap-4 text-accent-green ">
+			<div class="flex gap-4 text-accent-green">
 				<a
+					v-if="project.github_url"
 					:href="project.github_url"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex gap-2"
+					class="hover:brightness-150 transition text-sm"
 				>
-					GitHub ↗
+					View Code ↗
 				</a>
-				<p>|</p>
+
+				<p class="-mt-1">
+					|
+				</p>
+
 				<a
+					v-if="project.live_url"
 					:href="project.live_url"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="flex gap-2"
+					class="hover:brightness-150 transition text-sm"
 				>
-					Live ↗
+					Live Demo ↗
 				</a>
 			</div>
 		</header>
