@@ -17,7 +17,7 @@ const matchesRoute = (route: string): boolean => {
 				:class="matchesRoute('/')? 'text-accent-green' : ''"
 			>
 				<div
-					class="w-1.5 h-1.5 mt-1 rounded-full md:mr-2 md:mt-0 transition-all duration-300"
+					class="w-1.5 h-1.5 mt-1 rounded-full md:mr-2 md:mt-0 transition"
 					:class="matchesRoute('/')? 'bg-accent-green nav-dot-active' : 'opacity-0'"
 				/>
 				<NuxtLink
@@ -32,7 +32,7 @@ const matchesRoute = (route: string): boolean => {
 				:class="matchesRoute('/blog')? 'text-accent-green' : ''"
 			>
 				<div
-					class="w-1.5 h-1.5 mt-1 rounded-full md:mr-2 md:mt-0 transition-all duration-300"
+					class="w-1.5 h-1.5 mt-1 rounded-full md:mr-2 md:mt-0 transition"
 					:class="matchesRoute('/blog')? 'bg-accent-green nav-dot-active' : 'opacity-0'"
 				/>
 				<NuxtLink
@@ -47,7 +47,7 @@ const matchesRoute = (route: string): boolean => {
 				:class="matchesRoute('/portfolio')? 'text-accent-green' : ''"
 			>
 				<div
-					class="w-1.5 h-1.5 mt-1 rounded-full md:mr-2 md:mt-0 transition-all duration-300"
+					class="w-1.5 h-1.5 mt-1 rounded-full md:mr-2 md:mt-0 transition"
 					:class="matchesRoute('/portfolio')? 'bg-accent-green nav-dot-active' : 'opacity-0'"
 				/>
 				<NuxtLink
