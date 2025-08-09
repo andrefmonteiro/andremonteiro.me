@@ -16,7 +16,7 @@ const props = defineProps({
 			<div
 				v-for="tool in techStack"
 				:key="tool"
-				class="grayscale-100 group-hover:grayscale-50 transition duration-150"
+				class="grayscale-100  group-hover:grayscale-50 transition duration-150"
 				:title="tool"
 			>
 				<Icon

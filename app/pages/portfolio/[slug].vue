@@ -21,30 +21,47 @@ useSeoMeta({
 
 <template>
 	<div v-if="project">
-		<header class="-mt-1 border-b border-surface-muted pb-4">
+		<header class="-mt-1 mb-8 border-b border-surface-muted">
 			<h1 class="mb-2">
 				{{ project.title }}
 			</h1>
 			<p class="text-text-secondary">
 				{{ project.description }}
 			</p>
-			<div class="flex gap-5">
-				<div
+
+			<div class="flex gap-2 mt-6 mb-6">
+				<span
 					v-for="tool in project.tech_stack"
 					:key="tool"
-					:title="tool"
+					class="px-2 py-1 bg-surface-muted text-text-primary text-xs rounded-md"
 				>
-					<Icon
-						:name="TECH_STACK_ICONS[tool as keyof typeof TECH_STACK_ICONS]!"
-						size="18px"
-						class="grayscale-50"
-					/>
-				</div>
+					{{ tool }}
+				</span>
+			</div>
+
+			<div class="flex gap-4 text-accent-green">
+				<a
+					:href="project.github_url"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					GitHub ↗
+
+				</a>
+				<p>|</p>
+				<a
+					:href="project.live_url"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Live ↗
+
+				</a>
 			</div>
 		</header>
-		<br>
 		<ContentRenderer
 			:value="project"
+			class="body-content"
 		/>
 	</div>
 </template>

@@ -9,7 +9,7 @@ const props = defineProps({ title: String, date: String })
 		</h2>
 
 		<time
-			class="text-text-tertiary text-sm -mt-2 md:pt-2 pb-3 md:pb-0"
+			class="text-text-tertiary text-sm -mt-1 md:pt-2 pb-3 md:pb-0"
 			:datetime="props.date"
 		>
 			{{ props.date }}
