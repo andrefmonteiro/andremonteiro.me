@@ -1,16 +1,11 @@
 <script setup lang="ts">
-const props = defineProps({
-	currentRoute: {
-		type: String,
-		required: true,
-	},
-})
+const currentRoute = useRoute()
 
 const matchesRoute = (route: string): boolean => {
 	if (route === '/') {
-		return props.currentRoute === '/'
+		return currentRoute.path === '/'
 	}
-	return props.currentRoute.startsWith(route)
+	return currentRoute.path.startsWith(route)
 }
 </script>
 

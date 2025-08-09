@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const route = useRoute()
 </script>
 
 <template>
@@ -7,7 +6,7 @@ const route = useRoute()
 		<div class="flex flex-col md:w-[175px] md:flex-shrink-0 md:gap-24 md:sticky md:top-28 md:self-start">
 			<HeaderLogo class="mb-8 md:mb-0" />
 			<HeaderName class="md:hidden mb-3 md:mb-0" />
-			<AppNavbar :current-route="route.path" />
+			<AppNavbar />
 		</div>
 
 		<div class="flex flex-col md:flex-1 md:pt-1">
