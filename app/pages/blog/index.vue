@@ -15,6 +15,11 @@ const sortedPosts = computed(() => {
 		}
 	})
 })
+
+defineOgImageComponent('Pergel', {
+	title: 'Blog',
+	description: 'Insights on software, learning and art.',
+})
 </script>
 
 <template>

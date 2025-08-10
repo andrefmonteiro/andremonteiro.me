@@ -2,6 +2,11 @@
 import ProjectCard from '~/components/ProjectCard.vue'
 
 const { data: projects } = await useAsyncData('portfolio', () => queryCollection('portfolio').all())
+
+defineOgImageComponent('Pergel', {
+	title: 'Portfolio',
+	description: 'Projects born from need and wonder.',
+})
 </script>
 
 <template>

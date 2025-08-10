@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 	site: {
 		url: 'https://andremonteiro.me',
 		name: 'André Monteiro',
-		description: 'Insights on software, learning and creativity',
+		description: 'Insights on software, learning and creativity.',
 		defaultLocale: 'en',
 	},
 	content: {

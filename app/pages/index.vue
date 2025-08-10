@@ -1,5 +1,8 @@
 <script setup lang="ts">
-
+defineOgImageComponent('Pergel', {
+	title: 'André Monteiro',
+	description: 'My personal blog & portfolio.',
+})
 </script>
 
 <template>
