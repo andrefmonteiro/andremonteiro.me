@@ -5,6 +5,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/sitemap',
 		'@nuxtjs/robots',
 		'nuxt-seo-utils',
+		'nuxt-og-image',
 		'@nuxt/eslint',
 		'@nuxt/icon',
 		'@nuxt/content',
