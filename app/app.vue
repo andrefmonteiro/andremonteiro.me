@@ -1,4 +1,10 @@
 <script setup lang="ts">
+useSeoMeta({
+	title: 'André Monteiro',
+	ogTitle: 'André Monteiro',
+	description: 'André Monteiro\'s personal website, portfolio and blog',
+	ogDescription: 'André Monteiro\'s personal website, portfolio and blog',
+})
 </script>
 
 <template>
