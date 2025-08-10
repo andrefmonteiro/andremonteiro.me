@@ -10,6 +10,13 @@ export default defineNuxtConfig({
 		'@nuxt/image',
 	],
 	devtools: { enabled: true },
+	app: {
+		head: {
+			htmlAttrs: {
+				lang: 'en',
+			},
+		},
+	},
 	css: ['~/assets/css/main.css'],
 	site: {
 		url: 'https://andremonteiro.me',
