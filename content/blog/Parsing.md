@@ -2,7 +2,7 @@
 title: About Parsing
 date: August 4, 2025
 description: On how learning about parsing can make your compilation process more effective.
-
+thumbnail: public/images/Woodland-Kingfisher.jpg
 ---
 
 <!-- Same tab -->

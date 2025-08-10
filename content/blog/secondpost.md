@@ -2,6 +2,7 @@
 title: Second post
 date: 1996-01-03
 description: A piece of writing about experience.
+thumbnail: public/images/Woodland-Kingfisher.jpg
 ---
 Some code:
 ``` typescript
