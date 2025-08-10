@@ -13,6 +13,12 @@ if (!post.value) {
 	})
 }
 
+defineOgImageComponent('Pergel', {
+	parentRoute: 'blog',
+	title: post.value.title,
+	description: post.value.description,
+})
+
 useSeoMeta({
 	title: post.value.title,
 	description: post.value.description,

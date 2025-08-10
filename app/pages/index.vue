@@ -1,12 +1,5 @@
 <script setup lang="ts">
-const site = useSiteConfig()
-defineOgImageComponent('NuxtSeo', {
-	title: 'André Monteiro',
-	description: site.description,
-	siteName: ' ',
-	theme: '#02120f',
-	colorMode: 'dark',
-})
+
 </script>
 
 <template>
