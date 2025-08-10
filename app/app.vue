@@ -11,7 +11,7 @@ useSeoMeta({
 	<div class="max-w-4xl mx-4 md:px-6 md:ml-[14vw] md:mr-auto mb-32 flex flex-col md:flex-row md:items-start gap-10 mt-6 md:mt-28">
 		<a
 			href="#main-content"
-			class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-accent-green focus:text-surface-default focus:px-3 focus:py-2 focus:rounded focus:underline"
+			class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-surface-muted text-accent-green focus:px-3 focus:py-2 focus:rounded focus:underline"
 		>
 			Skip to main content
 		</a>
