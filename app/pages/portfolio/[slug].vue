@@ -13,10 +13,18 @@ if (!project.value) {
 	})
 }
 
+const combinedKeywords = [
+	...project.value.tech_stack,
+	...project.value.tags,
+].join(', ')
+
 useSeoMeta({
 	title: project.value.title,
 	description: project.value.description,
-	...project.value.seo || {},
+	ogImage: project.value.thumbnail,
+
+	ogType: 'article',
+	keywords: combinedKeywords,
 })
 </script>
 

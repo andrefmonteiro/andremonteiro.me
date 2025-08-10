@@ -16,7 +16,10 @@ if (!post.value) {
 useSeoMeta({
 	title: post.value.title,
 	description: post.value.description,
-	...post.value.seo || {},
+	ogType: 'article',
+	ogImage: post.value.thumbnail,
+	articlePublishedTime: post.value.date,
+	articleTag: post.value.tags,
 })
 </script>
 
