@@ -4,23 +4,19 @@ export default defineNuxtConfig({
 	modules: [
 		'@nuxtjs/sitemap',
 		'@nuxtjs/robots',
+		'nuxt-seo-utils',
 		'@nuxt/eslint',
 		'@nuxt/icon',
 		'@nuxt/content',
 		'@nuxt/image',
 	],
 	devtools: { enabled: true },
-	app: {
-		head: {
-			htmlAttrs: {
-				lang: 'en',
-			},
-		},
-	},
 	css: ['~/assets/css/main.css'],
 	site: {
 		url: 'https://andremonteiro.me',
 		name: 'André Monteiro',
+		description: 'Insights on software, learning and creativity',
+		defaultLocale: 'en',
 	},
 	content: {
 		build: {
@@ -60,6 +56,13 @@ export default defineNuxtConfig({
 					fit: 'inside',
 				},
 			},
+		},
+	},
+	seo: {
+		meta: {
+			author: 'André Monteiro',
+			themeColor: '#02120f',
+			applicationName: 'André Monteiro - Blog & Portfolio',
 		},
 	},
 })
