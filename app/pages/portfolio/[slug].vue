@@ -22,6 +22,12 @@ const optimizedKeywords = combinedKeywords.length > 160
 	? combinedKeywords.substring(0, 160).split(',').slice(0, -1).join(',')
 	: combinedKeywords
 
+defineOgImageComponent('Pergel', {
+	parentRoute: 'portfolio',
+	title: project.value.title,
+	description: project.value.description,
+})
+
 useSeoMeta({
 	title: project.value.title,
 	description: project.value.description,

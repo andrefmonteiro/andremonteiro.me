@@ -1,6 +1,7 @@
 <script setup lang="ts">
 /**
- * @credits Pergel <https://nuxtlabs.com/> // should i keep this? how does it work?
+ * @credits Pergel <https://nuxtlabs.com/>
+ * @customized André Monteiro - Brand-specific OG image template
  */
 
 defineProps<{
