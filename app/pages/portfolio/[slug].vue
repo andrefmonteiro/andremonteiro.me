@@ -32,21 +32,23 @@ useSeoMeta({
 
 			<div
 				class="flex gap-4 mt-6 mb-6"
+				role="list"
 				aria-label="Technologies used"
 			>
-				<span
+				<div
 					v-for="tool in project.tech_stack"
 					:key="tool"
+					role="listitem"
 					class="text-text-tertiary tooltip"
 					:data-tooltip="tool"
-					:aria-label="tool"
+					:aria-label="`Technology: ${tool}`"
 				>
 					<Icon
 						:name="TECH_STACK_ICONS[tool as keyof typeof TECH_STACK_ICONS]!"
 						size="18px"
 						aria-hidden="true"
 					/>
-				</span>
+				</div>
 			</div>
 
 			<nav

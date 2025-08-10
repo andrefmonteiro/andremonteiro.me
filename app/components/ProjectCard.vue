@@ -4,12 +4,21 @@ const props = defineProps({
 	description: String,
 	techStack: Array as () => string[],
 })
+
+const uniqueId = useId()
 </script>
 
 <template>
-	<article class="border-2 rounded-xl border-surface-muted p-4">
+	<article
+		class="border-2 rounded-xl border-surface-muted p-4"
+		role="article"
+		aria-labelledby="uniqueId"
+	>
 		<header>
-			<h2 class="text-xl font-semibold text-text-heading mb-3 mt-8;">
+			<h2
+				:id="uniqueId"
+				class="text-xl font-semibold text-text-heading mb-3 mt-8;"
+			>
 				{{ props.title }}
 			</h2>
 			<p class="text-text-secondary">
@@ -17,13 +26,14 @@ const props = defineProps({
 			</p>
 			<div
 				class="mt-6 flex gap-4"
+				role="list"
 				aria-label="Technologies used"
 			>
-				<span
+				<div
 					v-for="tool in techStack"
 					:key="tool"
+					role="listitem"
 					class="text-text-tertiary tooltip"
-					:title="tool"
 					:data-tooltip="tool"
 					:aria-label="tool"
 				>
@@ -32,7 +42,7 @@ const props = defineProps({
 						size="18px"
 						aria-hidden="true"
 					/>
-				</span>
+				</div>
 			</div>
 		</header>
 	</article>
