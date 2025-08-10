@@ -31,6 +31,17 @@ export default defineNuxtConfig({
 		},
 	},
 	compatibilityDate: '2025-07-15',
+	nitro: {
+		prerender: {
+			crawlLinks: true,
+			routes: [
+				'/',
+				'/blog',
+				'/portfolio',
+				'/sitemap.xml',
+			],
+		},
+	},
 	vite: {
 		plugins: [
 			tailwindcss(),
@@ -58,6 +69,9 @@ export default defineNuxtConfig({
 				},
 			},
 		},
+	},
+	ogImage: {
+		zeroRuntime: true,
 	},
 	seo: {
 		meta: {
