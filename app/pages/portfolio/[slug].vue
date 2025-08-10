@@ -18,13 +18,17 @@ const combinedKeywords = [
 	...project.value.tags,
 ].join(', ')
 
+const optimizedKeywords = combinedKeywords.length > 160
+	? combinedKeywords.substring(0, 160).split(',').slice(0, -1).join(',')
+	: combinedKeywords
+
 useSeoMeta({
 	title: project.value.title,
 	description: project.value.description,
 	ogImage: project.value.thumbnail,
 
 	ogType: 'article',
-	keywords: combinedKeywords,
+	keywords: optimizedKeywords,
 })
 </script>
 
