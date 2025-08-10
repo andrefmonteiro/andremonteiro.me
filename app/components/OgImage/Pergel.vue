@@ -76,19 +76,19 @@ defineProps<{
 		<div class="w-[70vw] pl-[100px]">
 			<p
 				v-if="parentRoute"
-				class="uppercase text-[24px] text-[#10b981] mb-4 font-semibold tracking-wide"
+				class="uppercase text-2xl text-[#10b981] mb-6 font-semibold tracking-wide"
 			>
 				{{ parentRoute }}
 			</p>
 			<h1
-				class="m-0 text-6xl font-semibold mb-4 text-[#f2f3f2]"
-				style="display: block;"
+				class="m-0 text-7xl font-semibold mb-4 text-[#f2f3f2]"
+				style="display: block"
 			>
 				{{ title }}
 			</h1>
 			<p
-				class="text-[32px] text-[#E4E4E7] leading-tight"
-				style="display: block; line-clamp: 3;"
+				class="text-4xl text-[#919c97]"
+				style="display: block"
 			>
 				{{ description }}
 			</p>
