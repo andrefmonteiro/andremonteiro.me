@@ -14,7 +14,7 @@ defineOgImageComponent('Pergel', {
 		<header class="sr-only">
 			<h1>Portfolio Projects</h1>
 		</header>
-		<div class="-mt-1 flex flex-col gap-8">
+		<div class="-mt-4 flex flex-col gap-8">
 			<NuxtLink
 				v-for="project in projects"
 				:key="project.title"
