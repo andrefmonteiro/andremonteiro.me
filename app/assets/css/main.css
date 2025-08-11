@@ -110,3 +110,8 @@ main pre {
 .nav-dot-active {
   box-shadow: 0 0 8px var(--color-accent-green), 0 0 4px var(--color-accent-green);
 }
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.1s;
+}

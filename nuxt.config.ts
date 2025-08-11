@@ -12,6 +12,9 @@ export default defineNuxtConfig({
 		'@nuxt/image',
 	],
 	devtools: { enabled: true },
+	app: {
+		viewTransition: true,
+	},
 	css: ['~/assets/css/main.css'],
 	site: {
 		url: 'https://andremonteiro.me',
@@ -29,6 +32,9 @@ export default defineNuxtConfig({
 				},
 			},
 		},
+	},
+	experimental: {
+		viewTransition: true,
 	},
 	compatibilityDate: '2025-07-15',
 	nitro: {
