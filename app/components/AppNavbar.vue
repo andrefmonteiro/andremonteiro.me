@@ -60,3 +60,9 @@ const matchesRoute = (route: string): boolean => {
 		</div>
 	</nav>
 </template>
+
+<style>
+.nav-dot-active {
+  box-shadow: 0 0 8px var(--color-accent-green), 0 0 4px var(--color-accent-green);
+}
+</style>
