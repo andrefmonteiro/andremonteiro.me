@@ -10,7 +10,7 @@ const uniqueId = useId()
 
 <template>
 	<article
-		class="border-2 rounded-xl border-surface-muted p-4"
+		class="border-2 rounded-xl border-surface-muted p-4 hover:bg-surface-muted transition"
 		role="article"
 		aria-labelledby="uniqueId"
 	>

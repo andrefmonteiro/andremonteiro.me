@@ -12,3 +12,5 @@ This was my first project.
 It's a dashboard that helps you manage your Spotify playlists.
 
 It didn't go as expected, but it taught me a lot.
+
+I'm currently writing this project's story, so hold tight.
