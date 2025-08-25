@@ -12,7 +12,7 @@ const uniqueId = useId()
 	>
 		<h2
 			:id="uniqueId"
-			class="flex-1 text-xl font-semibold text-text-heading mb-3 mt-8 hover:text-text-secondary"
+			class="flex-1 text-xl font-semibold text-text-heading mb-3 mt-8 hover:text-text-secondary transition"
 		>
 			{{ props.title }}
 		</h2>
