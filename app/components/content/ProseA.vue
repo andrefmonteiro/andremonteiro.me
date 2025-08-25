@@ -14,7 +14,6 @@ const shouldOpenInNewTab = computed(() => {
 	return isExternalLink.value
 })
 
-// Set link attributes for new tab links
 const linkAttributes = computed(() => {
 	if (shouldOpenInNewTab.value) {
 		return {
