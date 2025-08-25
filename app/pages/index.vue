@@ -6,49 +6,14 @@ defineOgImageComponent('Pergel', {
 </script>
 
 <template>
-	<p>
-		About content here
-
-		I've always personally defined the "as code" suffix in "X as Code" to mean "a system of principles or rules"1. This is in contrast to the popular interpretation of "as code" to mean "as programming."
-
-		I feel the need to write this short blog post and clarify my intent because I'm often personally a target of this misunderstanding due to my history of starting Terraform2 which is a flagship "X as Code" tool.
-
-		My intent with "X as Code"3 was always to get knowledge out of people's heads and into a more inscribed system. Once inscribed, knowledge and process can be shared, versioned, iterated upon, etc.
-
-		The relation to programming is that codified knowledge tends to also be computer-readable and comes with the full benefits of that (e.g. automation, validation, etc). However, I don't believe that implies that all the requirements of modern programming should be applied to "as code" systems.
-
-		As an additional point of history, I coauthored the Tao of HashiCorp over a decade ago (before Terraform!) and this mindset is still present in the two "codification" sections, which remain mostly unchanged since their original writing. This helps provide additional framing for my intent with "as code."
-
-		Please do not take this post as a criticism of the "as programming" ideals, a claim that "as code" is perfect, or that "as code" should always be interpreted this way4. None of these are true. I only want to clarify my personal intent and use of the term historically.
-
-		I've always personally defined the "as code" suffix in "X as Code" to mean "a system of principles or rules"1. This is in contrast to the popular interpretation of "as code" to mean "as programming."
-
-		I feel the need to write this short blog post and clarify my intent because I'm often personally a target of this misunderstanding due to my history of starting Terraform2 which is a flagship "X as Code" tool.
-
-		My intent with "X as Code"3 was always to get knowledge out of people's heads and into a more inscribed system. Once inscribed, knowledge and process can be shared, versioned, iterated upon, etc.
-
-		The relation to programming is that codified knowledge tends to also be computer-readable and comes with the full benefits of that (e.g. automation, validation, etc). However, I don't believe that implies that all the requirements of modern programming should be applied to "as code" systems.
-
-		As an additional point of history, I coauthored the Tao of HashiCorp over a decade ago (before Terraform!) and this mindset is still present in the two "codification" sections, which remain mostly unchanged since their original writing. This helps provide additional framing for my intent with "as code."
-
-		Please do not take this post as a criticism of the "as programming" ideals, a claim that "as code" is perfect, or that "as code" should always be interpreted this way4. None of these are true. I only want to clarify my personal intent and use of the term historically.
-
-		Footnotes
-
-		I've always personally defined the "as code" suffix in "X as Code" to mean "a system of principles or rules"1. This is in contrast to the popular interpretation of "as code" to mean "as programming."
-
-		I feel the need to write this short blog post and clarify my intent because I'm often personally a target of this misunderstanding due to my history of starting Terraform2 which is a flagship "X as Code" tool.
-
-		My intent with "X as Code"3 was always to get knowledge out of people's heads and into a more inscribed system. Once inscribed, knowledge and process can be shared, versioned, iterated upon, etc.
-
-		The relation to programming is that codified knowledge tends to also be computer-readable and comes with the full benefits of that (e.g. automation, validation, etc). However, I don't believe that implies that all the requirements of modern programming should be applied to "as code" systems.
-
-		As an additional point of history, I coauthored the Tao of HashiCorp over a decade ago (before Terraform!) and this mindset is still present in the two "codification" sections, which remain mostly unchanged since their original writing. This helps provide additional framing for my intent with "as code."
-
-		Please do not take this post as a criticism of the "as programming" ideals, a claim that "as code" is perfect, or that "as code" should always be interpreted this way4. None of these are true. I only want to clarify my personal intent and use of the term historically.
-
-		Footnotes
-
-		Footnotes
-	</p>
+	<div>
+		<p>
+			I'm a software developer living in Porto, Portugal. I also study Computer Science at the University of Porto.
+		</p>
+		<p>
+			I work on web apps that solve someone's problem, wrapped with an intutive user experience. In the process, I enjoy learning about tradeoff decisions, data modelling, and the role of abstractions.
+		</p>
+		<p>I want to learn more about security driven development. I'm particularly curious about penetration testing.</p>
+		<p>I have a background in Social Psychology, and I was a technical recruiter at Prismic. I'm a basketball aficionado.</p>
+	</div>
 </template>
