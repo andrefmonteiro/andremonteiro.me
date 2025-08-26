@@ -1,26 +1,45 @@
 <template>
-	<div class="max-w-4xl mx-6 md:px-8 md:ml-[14vw] md:mr-auto mb-32 flex flex-col md:flex-row md:items-start gap-10 mt-6 md:mt-28">
+	<div class="min-h-screen px-6 md:px-8 mb-32 mt-6 md:mt-28">
 		<a
 			href="#main-content"
 			class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-surface-muted text-accent-green focus:px-3 focus:py-2 focus:rounded focus:underline"
 		>
 			Skip to main content
 		</a>
-		<aside class="flex flex-col md:w-[175px] md:flex-shrink-0 md:gap-24 md:sticky md:top-28 md:self-start">
-			<HeaderLogo class="mb-8 md:mb-0" />
-			<HeaderName class="md:hidden mb-3 md:mb-0" />
-			<AppNavbar />
-		</aside>
 
-		<div class="flex flex-col md:flex-1 md:pt-1">
-			<HeaderName class="hidden md:block mb-8 md:mb-25" />
+		<div class="flex flex-col md:hidden gap-6">
+			<HeaderLogo />
+			<HeaderName />
+			<AppNavbar class="mb-4" />
 			<main
 				id="main-content"
-				class="mb-16 md:mb-28"
+				class="mb-16"
 			>
 				<NuxtPage />
 			</main>
 			<AppFooter />
+		</div>
+
+		<div class="hidden md:flex max-w-5xl mx-auto items-start gap-10">
+			<aside class="sticky top-28 w-[175px] flex-shrink-0 flex flex-col gap-24">
+				<HeaderLogo />
+				<AppNavbar />
+			</aside>
+
+			<div class="max-w-prose flex-1 min-w-0">
+				<div class="flex flex-col pt-1">
+					<HeaderName class="mb-8 md:mb-25" />
+					<main
+						id="main-content"
+						class="md:mb-32"
+					>
+						<NuxtPage />
+					</main>
+					<AppFooter />
+				</div>
+			</div>
+
+			<div class="w-[175px] flex-shrink-0" />
 		</div>
 	</div>
 </template>
