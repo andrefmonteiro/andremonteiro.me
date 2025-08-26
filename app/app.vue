@@ -21,14 +21,14 @@
 		</div>
 
 		<div class="hidden md:flex max-w-5xl mx-auto items-start gap-10">
-			<aside class="sticky top-28 w-[175px] flex-shrink-0 flex flex-col gap-24">
+			<aside class="sticky top-28 w-[175px] flex-shrink-0 flex flex-col gap-20">
 				<HeaderLogo />
 				<AppNavbar />
 			</aside>
 
 			<div class="max-w-prose flex-1 min-w-0">
 				<div class="flex flex-col pt-1">
-					<HeaderName class="mb-8 md:mb-25" />
+					<HeaderName class="mb-8 md:mb-21" />
 					<main
 						id="main-content"
 						class="md:mb-32"
