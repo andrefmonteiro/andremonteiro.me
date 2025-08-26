@@ -4,7 +4,7 @@
 	--color-surface-default: oklch(16.548% 0.02564 180.962);
 	--color-surface-muted: oklch(22.031% 0.02153 180.19);
 	
-	--color-text-primary: oklch(0.849 0.0077 164.9);
+	--color-text-primary: oklch(0.8087 0.0077 164.9);
 	--color-text-secondary: oklch(0.6824 0.0145 166.97);
 	--color-text-tertiary: oklch(51.176% 0.01266 167.669);
 	--color-text-heading: oklch(0.9631 0.0017 145.56);
@@ -23,7 +23,7 @@
 
 body {
 	@apply bg-surface-default;
-	@apply text-text-primary text-base leading-[1.5];
+	@apply text-text-primary text-[15px] leading-[1.5];
 }
 
 main h1 {
@@ -75,6 +75,10 @@ main p:last-child {
 
 pre {
 @apply mb-4 text-wrap
+}
+
+nav {
+	@apply font-medium;
 }
 
 .body-content p a {
