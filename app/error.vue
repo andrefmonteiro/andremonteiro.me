@@ -14,8 +14,8 @@ const handleError = async (route: string) => {
 
 <template>
 	<div class="max-w-5xl px-6 min-h-screen mx-auto -mt-16 flex flex-col items-center justify-center">
-		<h1 class="text-6xl font-bold text-text-heading mb-6">
-			{{ error?.statusCode }}
+		<h1 class="text-5xl font-bold text-text-heading mb-6">
+			Error {{ error?.statusCode }}
 		</h1>
 
 		<h2
@@ -27,9 +27,10 @@ const handleError = async (route: string) => {
 		</h2>
 		<h2
 			v-else
-			class="text-center text-xl md:text-2xl text-text-secondary mb-8 leading-relaxed"
+			class="text-center text-md md:text-xl mb-8 leading-relaxed"
 		>
-			{{ error?.statusMessage }}
+			Something unusual happened.<br>
+			Let's try again.
 		</h2>
 
 		<button
