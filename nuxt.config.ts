@@ -6,14 +6,20 @@ export default defineNuxtConfig({
 		'@nuxtjs/robots',
 		'nuxt-seo-utils',
 		'nuxt-og-image',
-		'@nuxt/eslint',
+		// '@nuxt/eslint',
 		'@nuxt/icon',
 		'@nuxt/content',
 		'@nuxt/image',
+		...(process.env.NODE_ENV === 'development' ? ['@nuxt/eslint'] : []),
 	],
 	devtools: { enabled: true },
 	app: {
 		viewTransition: true,
+		head: {
+			meta: [
+				{ name: 'format-detection', content: 'telephone=no' }, // disables phone linking
+			],
+		},
 	},
 	css: ['~/assets/css/main.css'],
 	site: {
@@ -32,9 +38,6 @@ export default defineNuxtConfig({
 				},
 			},
 		},
-	},
-	experimental: {
-		viewTransition: true,
 	},
 	compatibilityDate: '2025-07-15',
 	nitro: {
