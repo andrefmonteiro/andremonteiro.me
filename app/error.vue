@@ -18,20 +18,20 @@ const handleError = async (route: string) => {
 			Error {{ error?.statusCode }}
 		</h1>
 
-		<h2
+		<p
 			v-if="error?.statusCode === 404"
-			class="text-center text-xl md:text-2xl mb-8 leading-relaxed"
+			class="text-center md:text-xl mb-8 leading-relaxed"
 		>
 			You're trying to reach an obscure corner of the Internet.<br>
 			We don't blame you.
-		</h2>
-		<h2
+		</p>
+		<p
 			v-else
-			class="text-center text-md md:text-xl mb-8 leading-relaxed"
+			class="text-center md:text-xl mb-8 leading-relaxed"
 		>
 			Something unusual happened.<br>
 			Let's try again.
-		</h2>
+		</p>
 
 		<button
 			class="px-6 py-3 font-semibold bg-accent-green text-surface-default rounded-lg hover:brightness-150 transition flex gap-2 cursor-pointer"
