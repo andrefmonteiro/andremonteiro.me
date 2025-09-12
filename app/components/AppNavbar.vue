@@ -10,8 +10,8 @@ const matchesRoute = (route: string): boolean => {
 </script>
 
 <template>
-	<nav class="flex flex-row md:flex-col items-start text-sm md:-ml-1.5">
-		<div class="flex flex-row space-x-6 md:flex-col md:space-x-0 md:space-y-[6px] md:-ml-2">
+	<nav class="flex flex-row md:flex-col items-start md:-ml-1.5">
+		<div class="flex flex-row space-x-6 md:flex-col md:space-x-0 md:space-y-1 md:-ml-2">
 			<div
 				class="flex flex-col-reverse md:flex-row items-center py-1"
 				:class="matchesRoute('/')? 'text-accent-green' : ''"
@@ -63,6 +63,9 @@ const matchesRoute = (route: string): boolean => {
 
 <style>
 .nav-dot-active {
-  box-shadow: 0 0 8px var(--color-accent-green), 0 0 4px var(--color-accent-green);
+  box-shadow:
+    0 0 6px var(--color-accent-green),
+    0 0 12px var(--color-accent-green),
+    0 0 24px var(--color-accent-green);
 }
 </style>

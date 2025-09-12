@@ -7,7 +7,7 @@
 			Skip to main content
 		</a>
 
-		<div class="flex flex-col md:hidden gap-6">
+		<div class="max-w-[66ch] flex flex-col md:hidden gap-6">
 			<HeaderLogo />
 			<HeaderName />
 			<AppNavbar class="mb-4" />
@@ -26,7 +26,7 @@
 				<AppNavbar />
 			</aside>
 
-			<div class="max-w-prose flex-1 min-w-0">
+			<div class="max-w-[66ch] flex-1 min-w-0">
 				<div class="flex flex-col pt-1">
 					<HeaderName class="mb-8 md:mb-21" />
 					<main
