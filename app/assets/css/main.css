@@ -11,8 +11,8 @@
 	
 	--color-accent-green: oklch(0.696 0.0663 125.78);
 	--color-accent-peach: oklch(0.7383 0.0306 17.87);
-	--color-accent-purple: oklch(0.7349 0.0396 307.86);
-	--color-accent-blue: oklch(62.892% 0.04511 233.113);
+	--color-accent-purple: oklch(71.576% 0.12374 306.463);
+	--color-accent-blue: oklch(68.247% 0.08979 244.909);
 }
 
 /* 
@@ -27,15 +27,15 @@ body {
 }
 
 main h1 {
-	@apply text-2xl font-bold text-text-heading;
+	@apply text-3xl font-bold text-text-heading;
 }
 
 .body-content h2 {
-	@apply text-xl font-semibold text-text-heading mb-3 mt-8;
+	@apply text-xl font-bold text-text-heading mb-3 mt-8;
 }
 
 main h3 {
-	@apply text-lg font-medium text-text-heading mb-4 mt-6;
+	@apply text-lg font-semibold text-text-heading mb-2 mt-6;
 }
 
 main h1:first-child,
@@ -57,8 +57,8 @@ main ol {
   @apply mb-4 ml-6;
   list-style-type: decimal;
 }
-main ol {
-  list-style-type: lower-alpha;
+main ol ul {
+  list-style-type: circle;
 }
 
 main li {
@@ -82,11 +82,11 @@ nav {
 }
 
 .body-content p a {
-	@apply underline underline-offset-4 decoration-2 text-accent-green hover:brightness-150 transition
+	@apply underline underline-offset-3 decoration-[1.5] text-accent-green hover:brightness-125 transition
 }
 
 main code {
-  @apply bg-surface-muted text-accent-blue px-1.5 py-0.5 rounded text-sm font-mono;
+  @apply bg-surface-muted text-accent-purple px-1.5 py-0.5 rounded text-sm font-mono;
 }
 
 main pre {
