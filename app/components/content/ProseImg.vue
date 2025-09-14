@@ -55,10 +55,10 @@ onUnmounted(() => {
 			:height="props.height"
 			preset="default"
 			loading="lazy"
-			class="max-w-full h-auto mx-auto rounded-sm cursor-zoom-in hover:brightness-150 transition"
+			class="w-full mt-8 h-auto mx-auto rounded-sm cursor-zoom-in hover:opacity-70 transition"
 			@click="toggleEnlarge"
 		/>
-		<figcaption class="text-sm text-text-tertiary text-center pt-1">
+		<figcaption class="text-sm text-text-tertiary text-center pt-2">
 			{{ title }}
 		</figcaption>
 	</figure>
@@ -71,7 +71,7 @@ onUnmounted(() => {
 		:height="height"
 		preset="default"
 		loading="lazy"
-		class="mb-6 max-w-full h-auto mx-auto block rounded-lg cursor-zoom-in hover:brightness-150 transition"
+		class="mb-6 w-full mt-8 h-auto mx-auto block rounded-lg cursor-zoom-in hover:opacity-70 transition"
 		@click="toggleEnlarge"
 	/>
 
@@ -81,23 +81,23 @@ onUnmounted(() => {
 			class="fixed inset-0 bg-surface-default z-50 flex items-center justify-center p-4"
 			@click="toggleEnlarge"
 		>
-			<div class="relative max-w-full max-h-full">
-				<button
-					class="absolute top-2 right-4 text-white text-2xl cursor-pointer hover:text-text-secondary"
-					aria-label="Close enlarged image"
-					@clic.stop="toggleEnlarge"
-				>
-					×
-				</button>
+			<button
+				class="absolute top-4 right-4 bg-surface-muted z-10 w-8 h-8 flex items-center justify-center text-white text-2xl cursor-pointer hover:text-text-secondary rounded"
+				aria-label="Close enlarged image"
+				@click.stop="toggleEnlarge"
+			>
+				×
+			</button>
+			<div class="relative flex flex-col max-w-full max-h-full">
 				<NuxtImg
 					:src="src"
 					:alt="alt"
-					class="max-w-full max-h-full object-contain rounded-lg"
+					class="max-w-full max-h-[90vh] object-contain rounded-lg"
 					@click.stop
 				/>
 				<p
 					v-if="title"
-					class="text-white text-center mt-2 text-sm"
+					class="text-text-tertiary text-center mt-2 text-sm"
 				>
 					{{ title }}
 				</p>

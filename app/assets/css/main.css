@@ -23,7 +23,7 @@
 
 body {
 	@apply bg-surface-default;
-	@apply text-text-primary text-[15px] leading-[1.5];
+	@apply text-text-primary text-[15px] leading-[1.75];
 }
 
 main h1 {
@@ -31,7 +31,7 @@ main h1 {
 }
 
 .body-content h2 {
-	@apply text-xl font-bold text-text-heading mb-3 mt-8;
+	@apply text-xl font-bold text-text-heading mb-3 mt-10;
 }
 
 main h3 {
