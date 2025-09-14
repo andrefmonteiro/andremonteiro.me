@@ -6,7 +6,6 @@ export default defineNuxtConfig({
 		'@nuxtjs/robots',
 		'nuxt-seo-utils',
 		'nuxt-og-image',
-		// '@nuxt/eslint',
 		'@nuxt/icon',
 		'@nuxt/content',
 		'@nuxt/image',
@@ -69,6 +68,7 @@ export default defineNuxtConfig({
 	image: {
 		quality: 80,
 		format: ['webp', 'jpg'],
+		provider: 'ipxStatic',
 		presets: {
 			default: {
 				modifiers: {

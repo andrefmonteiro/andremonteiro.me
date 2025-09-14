@@ -89,12 +89,13 @@ onUnmounted(() => {
 				×
 			</button>
 			<div class="relative flex flex-col max-w-full max-h-full">
-				<NuxtImg
+				<img
 					:src="src"
 					:alt="alt"
 					class="max-w-full max-h-[90vh] object-contain rounded-lg"
+					preset="default"
 					@click.stop
-				/>
+				>
 				<p
 					v-if="title"
 					class="text-text-tertiary text-center mt-2 text-sm"
