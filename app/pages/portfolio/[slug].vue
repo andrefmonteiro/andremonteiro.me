@@ -31,7 +31,6 @@ defineOgImageComponent('Pergel', {
 useSeoMeta({
 	title: project.value.title,
 	description: project.value.description,
-	ogImage: project.value.thumbnail,
 
 	ogType: 'article',
 	keywords: optimizedKeywords,
@@ -78,13 +77,16 @@ useSeoMeta({
 					:href="project.github_url"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="hover:brightness-150 transition text-sm"
+					class="hover:brightness-125 transition text-sm flex flex-row gap-0.5"
 				>
-					View Code ↗
+					Source Code <Icon
+						name="ri:arrow-right-up-line"
+						class="mt-1 "
+					/>
 				</a>
 
 				<span
-					class="-mt-1"
+					class="-mt-1 font-extralight"
 					aria-hidden="true"
 				>|</span>
 
@@ -93,9 +95,12 @@ useSeoMeta({
 					:href="project.live_url"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="hover:brightness-150 transition text-sm"
+					class="hover:brightness-125 transition text-sm flex flex-row gap-0.5"
 				>
-					Live Demo ↗
+					Live Demo <Icon
+						name="ri:arrow-right-up-line"
+						class="mt-1 "
+					/>
 				</a>
 			</nav>
 		</header>

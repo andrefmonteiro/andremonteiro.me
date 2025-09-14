@@ -23,7 +23,6 @@ useSeoMeta({
 	title: post.value.title,
 	description: post.value.description,
 	ogType: 'article',
-	ogImage: post.value.thumbnail,
 	articlePublishedTime: post.value.date,
 	articleTag: post.value.tags,
 })

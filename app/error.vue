@@ -34,7 +34,7 @@ const handleError = async (route: string) => {
 		</p>
 
 		<button
-			class="px-6 py-3 font-semibold bg-accent-green text-surface-default rounded-lg hover:brightness-150 transition flex gap-2 cursor-pointer"
+			class="px-6 py-3 font-semibold bg-accent-green text-surface-default rounded-lg hover:brightness-125 transition flex gap-2 cursor-pointer"
 			@click="handleError('/')"
 		>
 			<Icon
