@@ -39,7 +39,7 @@ useSeoMeta({
 
 <template>
 	<article v-if="project">
-		<header class="-mt-1 mb-8 border-b border-surface-muted pb-4">
+		<header class="-mt-1 mb-8 border-b-3 border-surface-muted pb-4">
 			<h1 class="mb-2">
 				{{ project.title }}
 			</h1>
@@ -48,7 +48,7 @@ useSeoMeta({
 			</p>
 
 			<div
-				class="flex gap-4 mt-6 mb-6"
+				class="flex gap-4 mt-6 mb-4"
 				role="list"
 				aria-label="Technologies used"
 			>
