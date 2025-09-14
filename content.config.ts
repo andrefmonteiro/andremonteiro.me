@@ -14,7 +14,6 @@ export default defineContentConfig({
 						date: z.string(),
 						description: z.string(),
 						tags: z.array(z.string()),
-						thumbnail: z.string().optional(),
 					}),
 				}),
 			),
@@ -27,7 +26,6 @@ export default defineContentConfig({
 					schema: z.object({
 						title: z.string(),
 						description: z.string(),
-						thumbnail: z.string(),
 						tech_stack: z.array(z.string()),
 						tags: z.array(z.string()),
 						live_url: z.string(),

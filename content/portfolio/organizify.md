@@ -1,7 +1,6 @@
 ---
 title: Organizify
 description: A dashboard to tidy up your Spotify library.
-thumbnail: public/images/Woodland-Kingfisher.jpg
 tech_stack: [Nuxt, TypeScript, Tailwind, Supabase]
 tags: [spotify, music, playlists]
 live_url: https://organizify-music.vercel.app
@@ -53,7 +52,7 @@ And then it hit me. A year ago, while at a music festival, a friend told me he s
 **How to know what genre a song is?** Spotify doesn't give us genre data per song—it's per artist. We get genre data on the artist endpoint, and each artist has an array of genres. I decided to assume the first genre is most relevant (knowing there would be some misses—e.g., if a predominantly rock band makes a pop song, that song would be incorrectly categorized). I could live with these instances of incorrect categorization.
 
 ## Architecture
-![Auth flow of the application](/images/portfolio//organizify/organizify-auth-flow.png "PKCE Flow")
+![Auth flow of the application](/images/portfolio/organizify/organizify-auth-flow.png "PKCE Flow")
 
 ![Business logic flow of the application](/images/portfolio/organizify/organizify-logic-flow.png "Server-side proxy pattern")
 
