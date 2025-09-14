@@ -55,7 +55,7 @@ onUnmounted(() => {
 			:height="props.height"
 			preset="default"
 			loading="lazy"
-			class="w-full mt-8 h-auto mx-auto rounded-sm cursor-zoom-in hover:opacity-70 transition"
+			class="w-full mt-6 h-auto mx-auto rounded-sm cursor-zoom-in hover:opacity-70 transition"
 			@click="toggleEnlarge"
 		/>
 		<figcaption class="text-sm text-text-tertiary text-center pt-2">
