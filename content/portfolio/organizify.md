@@ -14,23 +14,26 @@ It didn't go as expected, which taught me a lot. This is its story.
 
 In the beginning, my MVP was an app where users could permanently save their Release Radar and Discover Weekly playlists. I keep forgetting to check those weekly playlists before they disappear, so the idea was to solve my own problem.
 
-The plan was simple: a user dashboard with two toggles that activate cron jobs. That's it. That's the bare minimum MVP I should focus on.
+The plan was simple: a user dashboard with two toggles that activate cron jobs.  
+That's it. That's the bare minimum MVP I should focus on.
 
 Admittedly, focusing on shipping a functional MVP before thinking of adding features was hard to do. I got caught up thinking about the ideal user journey and UX, wanting to craft those things ahead of time instead of deferring them for later. For example: what if a user logs in and then revokes the app's permissions on their Spotify account? Is this an edge case I need to implement right away, or can it wait until after shipping?
 
 ## Deciding a Tech Stack
 
-- **Vue** for enjoyability (I've been learning it and enjoying it), and **Nuxt** for productivity (staying in the same ecosystem instead of writing the backend with Java or Python).
-
+- **Vue** for enjoyability (I've been learning it and enjoying it)
+- **Nuxt** for productivity (staying in the same ecosystem instead of writing the backend with Java or Python).
 - **Supabase**: PostgreSQL database with a good free tier and embedded auth.
 
-### Wait, There's a Module for That?
+### Wait, there's a module for that?
 
 After spending a lot of time wrestling with Supabase documentation for their JS client, I discovered the `@nuxtjs/supabase` module.
 
 Nuxt has a module (as usual) that makes it easier to use Supabase. This means:
 - Much less code to write, no need to manually clean up tokens or protect routes
 - Middleware for route protection follows a "fail-safe" security model where you explicitly opt pages out of protection rather than remembering to opt them in
+
+Had I immediately searched for "Nuxt Supabase", instead of defaulting to reading the Supabase documentation for JS, and I could have saved a lot of time.
 
 ## Things will have to change
 
@@ -39,8 +42,7 @@ Realizing that people couldn't simply open the app and try it out by themselves 
 
 Despite this frustration, I decided to keep going anyway—this would still be useful to me and my friends.
 
-After knowing that the app couldn't go public, I faced another obstacle: realizing the original feature of saving weekly playlists isn't possible anymore.  
-When I went to read the Spotify documentation again for the weekly playlists endpoints, I realized:
+Soon enough, I was faced another obstacle: realizing the original feature of saving weekly playlists wasn't possible anymore. When I went to read the Spotify documentation again for the weekly playlists endpoints, I realized:
 
 - Spotify had deprecated the `/browse/featured-playlists` endpoint that gives access to the user's featured playlists (Daily Mixes, Release Radar, Discover Weekly, etc.).
 - There's no workaround through the `/me` endpoint or the `/search` endpoint.
@@ -71,5 +73,5 @@ There wasn't much refinement needed. The goal was to have a clean, usable interf
 
 - **Scope creep is real:** shipping fundamental value is better than delaying (supposedly) ideal value. It takes discipline to stay on track.
 - **Backend and API security patterns:** server-side proxy pattern, secure credential management, and token handling. Making diagrams helps.
-- ***"Has anyone done this before?"* as a heuristic:** had I immediately searched for "Nuxt Supabase", instead of defaulting to reading the Supabase documentation for JS, and I could have saved a lot of time.
+- ***"Has anyone done this before?"* as a heuristic:** it will make the process of reading documentation much better.
 - **Ideas are important, but don't fall in love with them:** you might just have to take a different route.
