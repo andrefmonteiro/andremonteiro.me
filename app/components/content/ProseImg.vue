@@ -58,7 +58,7 @@ onUnmounted(() => {
 			class="w-full mt-6 h-auto mx-auto rounded-sm cursor-zoom-in hover:opacity-70 transition"
 			@click="toggleEnlarge"
 		/>
-		<figcaption class="text-sm text-text-tertiary text-center pt-2">
+		<figcaption class="text-sm text-text-secondary text-center pt-2">
 			{{ title }}
 		</figcaption>
 	</figure>
@@ -98,7 +98,7 @@ onUnmounted(() => {
 				>
 				<p
 					v-if="title"
-					class="text-text-tertiary text-center mt-2 text-sm"
+					class="text-text-secondary text-center mt-2 text-sm"
 				>
 					{{ title }}
 				</p>

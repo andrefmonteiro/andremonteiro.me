@@ -36,7 +36,7 @@ useSeoMeta({
 			</h1>
 			<time
 				:datetime="post.date"
-				class="text-sm text-text-tertiary block mb-4"
+				class="text-sm text-text-secondary block mb-4"
 			>
 				{{ post.date }}
 			</time>

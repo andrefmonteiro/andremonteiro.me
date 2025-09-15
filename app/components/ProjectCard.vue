@@ -33,7 +33,7 @@ const uniqueId = useId()
 					v-for="tool in techStack"
 					:key="tool"
 					role="listitem"
-					class="text-text-tertiary tooltip"
+					class="text-text-secondary tooltip"
 					:data-tooltip="tool"
 					:aria-label="tool"
 				>

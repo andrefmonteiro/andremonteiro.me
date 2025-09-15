@@ -56,7 +56,7 @@ useSeoMeta({
 					v-for="tool in project.tech_stack"
 					:key="tool"
 					role="listitem"
-					class="text-text-tertiary tooltip"
+					class="text-text-secondary tooltip"
 					:data-tooltip="tool"
 					:aria-label="`Technology: ${tool}`"
 				>

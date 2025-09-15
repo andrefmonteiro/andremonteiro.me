@@ -18,7 +18,7 @@ const uniqueId = useId()
 		</h2>
 
 		<time
-			class="text-text-tertiary text-sm -mt-1 md:pt-2 pb-3 md:pb-0"
+			class="text-text-secondary text-sm -mt-1 md:pt-2 pb-3 md:pb-0"
 			:datetime="props.date"
 			:aria-label="`Published on ${props.date}`"
 		>

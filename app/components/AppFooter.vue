@@ -19,7 +19,7 @@ const currYear = new Date().getFullYear()
 					<Icon
 						name="grommet-icons:mail"
 						size="18px"
-						class="transition hover:text-text-tertiary"
+						class="transition hover:text-text-secondary"
 						aria-hidden="true"
 					/>
 				</a>
@@ -36,7 +36,7 @@ const currYear = new Date().getFullYear()
 					<Icon
 						name="grommet-icons:linkedin"
 						size="18px"
-						class="transition hover:text-text-tertiary"
+						class="transition hover:text-text-secondary"
 						aria-hidden="true"
 					/>
 				</a>
@@ -53,7 +53,7 @@ const currYear = new Date().getFullYear()
 					<Icon
 						name="grommet-icons:github"
 						size="18px"
-						class="transition hover:text-text-tertiary"
+						class="transition hover:text-text-secondary"
 						aria-hidden="true"
 					/>
 				</a>
