@@ -26,7 +26,7 @@ const isEnlarged = ref(false)
 
 const toggleEnlarge = () => {
 	isEnlarged.value = !isEnlarged.value
-	document.body.style.overflow = isEnlarged.value ? 'hidden' : ''
+	document.body.classList.toggle('modal-open', isEnlarged.value)
 }
 
 const handleKeydown = (e: KeyboardEvent) => {
@@ -108,3 +108,9 @@ onUnmounted(() => {
 		</div>
 	</Teleport>
 </template>
+
+<style>
+.modal-open {
+	overflow: hidden;
+}
+</style>
