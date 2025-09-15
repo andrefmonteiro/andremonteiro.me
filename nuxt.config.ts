@@ -66,7 +66,7 @@ export default defineNuxtConfig({
 		mode: 'svg',
 	},
 	image: {
-		quality: 80,
+		quality: 70,
 		format: ['webp', 'jpg'],
 		provider: 'ipxStatic',
 		presets: {

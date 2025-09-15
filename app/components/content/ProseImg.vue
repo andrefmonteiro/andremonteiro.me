@@ -26,7 +26,9 @@ const isEnlarged = ref(false)
 
 const toggleEnlarge = () => {
 	isEnlarged.value = !isEnlarged.value
-	document.body.classList.toggle('modal-open', isEnlarged.value)
+	if (import.meta.client) {
+		document.body.classList.toggle('modal-open', isEnlarged.value)
+	}
 }
 
 const handleKeydown = (e: KeyboardEvent) => {
@@ -78,7 +80,10 @@ onUnmounted(() => {
 		@click="toggleEnlarge"
 	/>
 
-	<Teleport to="body">
+	<Teleport
+		v-if="import.meta.client"
+		to="body"
+	>
 		<div
 			v-if="isEnlarged"
 			class="fixed inset-0 bg-surface-default z-50 flex items-center justify-center p-4"
