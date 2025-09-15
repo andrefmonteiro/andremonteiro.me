@@ -26,11 +26,13 @@ const isEnlarged = ref(false)
 
 const toggleEnlarge = () => {
 	isEnlarged.value = !isEnlarged.value
+	document.body.style.overflow = isEnlarged.value ? 'hidden' : ''
 }
 
 const handleKeydown = (e: KeyboardEvent) => {
 	if (e.key === 'Escape') {
 		isEnlarged.value = false
+		document.body.style.overflow = ''
 	}
 }
 
@@ -40,6 +42,7 @@ onMounted(() => {
 
 onUnmounted(() => {
 	document.removeEventListener('keydown', handleKeydown)
+	document.body.style.overflow = ''
 })
 </script>
 
@@ -93,7 +96,6 @@ onUnmounted(() => {
 					:src="src"
 					:alt="alt"
 					class="max-w-full max-h-[90vh] object-contain rounded-lg"
-					preset="default"
 					@click.stop
 				>
 				<p
@@ -106,10 +108,3 @@ onUnmounted(() => {
 		</div>
 	</Teleport>
 </template>
-
-<style scoped>
-/* Prevent body scroll when modal is open */
-body:has(.fixed.inset-0) {
-	overflow: hidden;
-}
-</style>

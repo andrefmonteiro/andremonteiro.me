@@ -4,8 +4,6 @@ const props = defineProps({
 	description: String,
 	techStack: Array as () => string[],
 })
-
-const uniqueId = useId()
 </script>
 
 <template>
@@ -16,7 +14,7 @@ const uniqueId = useId()
 	>
 		<header>
 			<h2
-				:id="uniqueId"
+				:id="`project-${title?.toLowerCase().replace(/\s+/g, '-')}`"
 				class="text-xl font-semibold text-text-heading mb-3 mt-8;"
 			>
 				{{ props.title }}
