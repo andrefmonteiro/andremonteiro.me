@@ -8,7 +8,7 @@ defineOgImageComponent('Pergel', {
 <template>
 	<div>
 		<p>
-			I'm a software developer living in Porto, Portugal. I also study Computer Science at the University of Porto.
+			I'm a software developer and Computer Science student based in Porto, Portugal.
 		</p>
 		<p>
 			I like to work on applications that solve someone's problem, even if mundane, and wrap them in an intuitive user experience. I draw inspiration from using products and thinking about how they could be improved. In the process, I enjoy learning about system design tradeoffs and data modelling.

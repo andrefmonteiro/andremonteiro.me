@@ -30,17 +30,17 @@ main h1 {
 	@apply text-3xl font-bold text-text-heading;
 }
 
-.body-content h2 {
+h2 {
 	@apply text-xl font-bold text-text-heading mb-3 mt-10;
 }
 
-main h3 {
+h3 {
 	@apply font-bold text-text-heading mb-2 mt-6;
 }
 
 main h1:first-child,
-main h2:first-child,
-main h3:first-child {
+h2:first-child,
+h3:first-child {
 	@apply mt-0;
 }
 
@@ -81,7 +81,7 @@ nav {
 	@apply font-medium;
 }
 
-.body-content p a {
+p a {
 	@apply underline underline-offset-3 decoration-[1.5] text-accent-green hover:brightness-125 transition
 }
 

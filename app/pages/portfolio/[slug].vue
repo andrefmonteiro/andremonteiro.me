@@ -107,7 +107,6 @@ useSeoMeta({
 
 		<ContentRenderer
 			:value="project"
-			class="body-content"
 		/>
 	</article>
 </template>

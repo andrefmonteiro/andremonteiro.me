@@ -47,7 +47,6 @@ useSeoMeta({
 
 		<ContentRenderer
 			:value="post"
-			class="body-content"
 		/>
 	</article>
 </template>

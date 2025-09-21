@@ -68,7 +68,7 @@ export default defineNuxtConfig({
 	image: {
 		quality: 70,
 		format: ['webp', 'jpg'],
-		provider: 'ipxStatic',
+		/*
 		presets: {
 			default: {
 				modifiers: {
@@ -78,6 +78,7 @@ export default defineNuxtConfig({
 				},
 			},
 		},
+		*/
 	},
 	ogImage: {
 		zeroRuntime: true,
