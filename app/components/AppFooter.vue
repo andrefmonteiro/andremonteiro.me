@@ -27,6 +27,22 @@ const currYear = new Date().getFullYear()
 
 			<li>
 				<a
+					href="https://github.com/andrefmonteiro"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="GitHub (opens in new tab)"
+				>
+
+					<Icon
+						name="grommet-icons:github"
+						size="18px"
+						class="transition hover:text-text-secondary"
+						aria-hidden="true"
+					/>
+				</a>
+			</li>
+			<li>
+				<a
 					href="https://linkedin.com/in/andrefmonteiro"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -42,22 +58,6 @@ const currYear = new Date().getFullYear()
 				</a>
 			</li>
 
-			<li>
-				<a
-					href="https://github.com/andrefmonteiro"
-					target="_blank"
-					rel="noopener noreferrer"
-					aria-label="GitHub (opens in new tab)"
-				>
-
-					<Icon
-						name="grommet-icons:github"
-						size="18px"
-						class="transition hover:text-text-secondary"
-						aria-hidden="true"
-					/>
-				</a>
-			</li>
 			<li>
 				<a
 					href="https://open.spotify.com/user/1174075700?si=d227fe28c466417c"
@@ -77,3 +77,9 @@ const currYear = new Date().getFullYear()
 		</ul>
 	</footer>
 </template>
+
+<style>
+a {
+	@apply hover:brightness-125 transition;
+}
+</style>
