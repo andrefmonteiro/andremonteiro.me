@@ -58,6 +58,22 @@ const currYear = new Date().getFullYear()
 					/>
 				</a>
 			</li>
+			<li>
+				<a
+					href="https://open.spotify.com/user/1174075700?si=d227fe28c466417c"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="Spotify (opens in new tab)"
+				>
+
+					<Icon
+						name="simple-icons:spotify"
+						size="18px"
+						class="transition hover:text-text-secondary"
+						aria-hidden="true"
+					/>
+				</a>
+			</li>
 		</ul>
 	</footer>
 </template>
