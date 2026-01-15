@@ -59,7 +59,7 @@ And then it hit me. A year ago, while at a music festival, a friend told me he s
 ### Performance Optimizations
 
 - **User data caching**: Spotify user ID and user name are exposed through the Supabase session, eliminating the need for redundant API calls to fetch basic user data in order to display a simple *"Hello, $username!"*.
-- **Incremental processing**: Built a `user_processed_songs` table that tracks which tracks have already been organized. On subsequent syncs, the app only processes newly added liked songs rather than reprocessing the entire library. This prevents duplicate API calls and makes the app snappier for people with large music collections. Specially helpful for songs that are very popular, which multiple users can have in common.
+- **Incremental processing**: Built a `user_processed_songs` table that tracks which tracks have already been organized. On subsequent syncs, the app only processes newly added liked songs rather than reprocessing the entire library. Always good to trim the volume of API calls, and it's helpful for songs that are very popular, which multiple users can have in common.
 - **Batch processing**: API calls are batched efficiently—50 artists per request for genre detection (Spotify's limit), 100 tracks per playlist update—to stay within rate limits while maximizing throughput.
 
 ## UI Refinement
