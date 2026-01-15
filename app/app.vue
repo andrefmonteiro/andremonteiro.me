@@ -1,5 +1,5 @@
 <template>
-	<div class="min-h-screen px-6 md:px-8 mb-32 mt-6 md:mt-28">
+	<div class="min-h-screen px-6 md:px-8 mb-32 mt-8 md:mt-28">
 		<a
 			href="#main-content"
 			class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-surface-muted text-accent-green focus:px-3 focus:py-2 focus:rounded focus:underline"
@@ -8,7 +8,7 @@
 		</a>
 
 		<div class="max-w-[66ch] flex flex-col md:hidden gap-6">
-			<HeaderLogo />
+			<HeaderLogo class="hidden" />
 			<HeaderName />
 			<AppNavbar class="mb-4" />
 			<main
@@ -22,7 +22,7 @@
 
 		<div class="hidden md:flex max-w-5xl mx-auto items-start gap-10">
 			<aside class="sticky top-28 w-[175px] flex-shrink-0 flex flex-col gap-20">
-				<HeaderLogo />
+				<HeaderLogo class="invisible" />
 				<AppNavbar />
 			</aside>
 
