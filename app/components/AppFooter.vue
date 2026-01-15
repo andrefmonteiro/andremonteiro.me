@@ -74,12 +74,28 @@ const currYear = new Date().getFullYear()
 					/>
 				</a>
 			</li>
+			<li>
+				<a
+					href="https://letterboxd.com/andrefmont/"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="Letterboxd (opens in new tab)"
+				>
+
+					<Icon
+						name="simple-icons:letterboxd"
+						size="18px"
+						class="transition hover:text-text-secondary"
+						aria-hidden="true"
+					/>
+				</a>
+			</li>
 		</ul>
 	</footer>
 </template>
 
 <style>
 a {
-	@apply hover:brightness-125 transition;
+	@apply hover:brightness-135 transition;
 }
 </style>
