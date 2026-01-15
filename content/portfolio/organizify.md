@@ -6,8 +6,8 @@ tags: [spotify, music, playlists]
 live_url: https://organizify-music.vercel.app
 github_url: https://github.com/andrefmonteiro/organizify
 ---
-This is a dashboard that helps you manage your Spotify library.  
-It didn't go as expected, which taught me a lot. This is its story.
+I built a web application that helps you manage your Spotify library.  
+The process didn't go as expected, which taught me a lot. This is its story.
 
 ## Defining a barebones MVP
 
