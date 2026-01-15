@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
 	<article
-		class="border-3 rounded-xl border-surface-muted p-4 hover:bg-surface-muted transition"
+		class="border-3 rounded-xl border-surface-muted p-4 bg-surface-muted"
 		role="article"
 		aria-labelledby="uniqueId"
 	>
