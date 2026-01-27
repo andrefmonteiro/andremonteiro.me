@@ -20,7 +20,7 @@ Admittedly, focusing on shipping a functional MVP before thinking of adding feat
 
 ## Deciding a Tech Stack
 
-- **Vue** for enjoyability (I've been learning it and enjoying it)
+- **Vue** for enjoyability (I've been learning it and enjoying it).
 - **Nuxt** for productivity (staying in the same ecosystem instead of writing the backend with Java or Python).
 - **Supabase**: PostgreSQL database with a good free tier and embedded auth.
 
@@ -29,8 +29,8 @@ Admittedly, focusing on shipping a functional MVP before thinking of adding feat
 After spending a lot of time wrestling with Supabase documentation for their JS client, I discovered the `@nuxtjs/supabase` module.
 
 Nuxt has a module (as usual) that makes it easier to use Supabase. This means:
-- Much less code to write, no need to manually clean up tokens or protect routes
-- Middleware for route protection follows a "fail-safe" security model where you explicitly opt pages out of protection rather than remembering to opt them in
+- Much less code to write, no need to manually clean up tokens or protect routes.
+- Middleware for route protection follows a "fail-safe" security model where you explicitly opt pages out of protection rather than remembering to opt them in.
 
 Had I immediately searched for "Nuxt Supabase", instead of defaulting to reading the Supabase documentation for JS, and I could have saved a lot of time.
 
